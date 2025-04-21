@@ -1,0 +1,35 @@
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  color: white;
+}
+
+@font-face {
+  font-family: "Jaro" ;
+  src: url("/fonts/Jaro-Regular-VariableFont_opsz.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Jersey";
+  src: url("/fonts/Jersey10-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PlexMono";
+  src: url("/fonts/IBMPlexMono-Regular.ttf") format("truetype");;
+}
