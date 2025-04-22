@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md";
+import { AiOutlineExport } from "react-icons/ai";
+import { LuGithub } from "react-icons/lu";
+
 
 export default function Home() {
   return (
@@ -18,19 +21,19 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a className= "group flex items-center py-3 active" href="#">
+              <a className= "group flex items-center py-3 active" href="#languages">
                 <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
                 <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Languages </span>
               </a>
             </li>
             <li>
-              <a className= "group flex items-center py-3 active" href="#">
+              <a className= "group flex items-center py-3 active" href="#experience">
                 <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Experience </span>
               </a>
             </li>
             <li>
-              <a className= "group flex items-center py-3 active" href="#">
+              <a className= "group flex items-center py-3 active" href="#projects">
                 <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Projects </span>
               </a>
@@ -46,7 +49,7 @@ export default function Home() {
             <p className="mb-4">Outside of academics, I’m constantly learning—whether that’s picking up new coding concepts, collaborating on group projects, or exploring creative problem-solving techniques. I'm passionate about continued growth and excited to contribute to environments where I can learn, build, and make a meaningful impact.</p>
           </section>
 
-          <section className="mb-32">
+          <section id="languages" className="mb-32">
             <div className="m-3 mb-20">
               <ul className="space-y-4">
                 {[
@@ -119,7 +122,7 @@ export default function Home() {
 
 
 
-          <section>
+          <section id="experience">
             <div>
               <ol>
                 <li className="mb-11">
@@ -205,23 +208,103 @@ export default function Home() {
       </div>
     </div>
 
-    <section className="flex flex-col justify-center">
-      <div>
-        project 1
+
+        <h1 className="text-5xl  text-center mx-auto my-24 ">---- PROJECTS ----</h1>
+
+
+    <section id="projects" className="flex flex-col mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0  ">
+
+
+
+    <div className="flex items-center mb-24">
+    <img src="/images/FBLA.png" alt={`image`} width={650} height={35} />
+
+      <div className="justify-items-end align-center space-y-2">
+        <h3>Student Project</h3>
+        <h1 className="text-2xl">FBLA CODING & PROGRAMMING</h1>
+        <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right'>A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
+        <ul className="flex felx-row space-x-6">
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Tailwind</li>
+        </ul>
+        <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
+      </div>
+    </div>
+
+
+    <div className="flex items-center mb-24">
+
+      <div className="justify-items-start align-center space-y-2">
+        <h3>Work based Learning Project</h3>
+        <h1 className="text-2xl" >BOY SCOUT TROOP 747</h1>
+        <p className='bg-grey2 text-white text-lg z-10 p-8 -mr-28 text-left'>A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation. </p>
+        <ul className="flex felx-row space-x-6">
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Tailwind</li>
+        </ul>
+        <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
       </div>
 
-      <div>
-        project 2
+      <img src="/images/FBLA.png" alt={`image`} width={650} height={35} className=" -z-10"/>
+
+    </div>
+
+
+    <div className="flex items-center mb-24">
+    <img src="/images/pet.png" alt={`image`} width={650} height={35} />
+
+      <div className="justify-items-end align-center space-y-2">
+        <h3>Student Project</h3>
+        <h1 className="text-2xl">PET ADOPTION WEBSITE</h1>
+        <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right'>A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
+        <ul className="flex felx-row space-x-6">
+          <li>EJSs</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
+      </div>
+    </div>
+
+
+    <div className="flex items-center mb-24">
+
+      <div className="justify-items-start align-center space-y-2">
+        <h3>Student Project</h3>
+        <h1 className="text-2xl" >CIPHER PROJECT</h1>
+        <p className='bg-grey2 text-white text-lg z-10 p-8 -mr-28 text-left'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
+        <ul className="flex felx-row space-x-6">
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+        <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
       </div>
 
-      <div>
-        project 3
-      </div>
+      <img src="/images/Cipher.png" alt={`image`} width={650} height={35} className=""/>
+      
 
-      <div>
-        project 4
-      </div>
+    </div>
+
+    <div className="flex justify-center">
+      <button className="group relative inline-flex h-12 items-center my-8 justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-3 font-medium text-neutral-600 transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)] w-auto">
+        Extra Projects
+      </button>
+    </div>
+
+
     </section>
+
+    <h1 className="text-5xl  text-center mx-auto my-24 ">---- CONTACT ME ----</h1>
+
+    <section id="contact" className="backdrop-opacity-20 bg-grey flex flex-col mx-auto min-h-20 my-20 max-w-screen-lg px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+        <div>
+
+        </div>
+    </section>
+
     </>
   );
 }
