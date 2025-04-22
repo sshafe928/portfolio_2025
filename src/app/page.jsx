@@ -9,9 +9,9 @@ export default function Home() {
     <>
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
       <div className='lg:flex lg:justify-between lg:gap-4'>
-        <div className=" lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:justify-between lg:py-24">
-          <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Sabrina Shafer</h1>
-          <h3 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Coding Student</h3>
+        <div className=" text-white lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:justify-between lg:py-24">
+          <h1 className="text-4xl font-bold tracking-tight  sm:text-5xl">Sabrina Shafer</h1>
+          <h3 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">Coding Student</h3>
           <p className="mt-4 max-w-xs leading-normal">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
           <ul className="mt-16 w-max">
             <li>
@@ -41,7 +41,7 @@ export default function Home() {
           </ul>
         </div>
         
-        <div className= "pt-24 lg:w-[52%] lg:py-24">
+        <div className= "text-white pt-24 lg:w-[52%] lg:py-24">
           <section className="mb-16">
             <p className="mb-4">I'm a motivated and detail-oriented student with a strong academic background, maintaining an A average across all subjects. I thrive in leadership roles, having taken on responsibilities through school athletics and West-MEC activities, where I’ve developed teamwork, communication, and organizational skills.</p>
             <p className="mb-4">My passion lies in computer science and web development, where I enjoy blending logical problem-solving with thoughtful design. I’ve built a solid foundation in UX principles and front-end technologies including JavaScript, CSS, HTML, Python, React.js, and MongoDB, and I’m always eager to expand that knowledge.</p>
@@ -49,7 +49,7 @@ export default function Home() {
             <p className="mb-4">Outside of academics, I’m constantly learning—whether that’s picking up new coding concepts, collaborating on group projects, or exploring creative problem-solving techniques. I'm passionate about continued growth and excited to contribute to environments where I can learn, build, and make a meaningful impact.</p>
           </section>
 
-          <section id="languages" className="mb-32">
+          <section id="languages" className="text-white mb-32">
             <div className="m-3 mb-20">
               <ul className="space-y-4">
                 {[
@@ -122,7 +122,7 @@ export default function Home() {
 
 
 
-          <section id="experience">
+          <section id="experience" className="text-white">
             <div>
               <ol>
                 <li className="mb-11">
@@ -209,10 +209,10 @@ export default function Home() {
     </div>
 
 
-        <h1 className="text-5xl  text-center mx-auto my-24 ">---- PROJECTS ----</h1>
+        <h1 className="text-5xl text-white text-center mx-auto my-24 ">---- PROJECTS ----</h1>
 
 
-    <section id="projects" className="flex flex-col mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0  ">
+    <section id="projects" className="text-white flex flex-col mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0  ">
 
 
 
@@ -238,7 +238,7 @@ export default function Home() {
       <div className="justify-items-start align-center space-y-2">
         <h3>Work based Learning Project</h3>
         <h1 className="text-2xl" >BOY SCOUT TROOP 747</h1>
-        <p className='bg-grey2 text-white text-lg z-10 p-8 -mr-28 text-left'>A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation. </p>
+        <p className='bg-grey2 text-white text-lg relative z-20 p-8 -mr-28 text-left'>A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation. </p>
         <ul className="flex felx-row space-x-6">
           <li>React.js</li>
           <li>Node.js</li>
@@ -247,7 +247,7 @@ export default function Home() {
         <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
       </div>
 
-      <img src="/images/FBLA.png" alt={`image`} width={650} height={35} className=" -z-10"/>
+      <img src="/images/Cipher.png" alt={`image`} width={650} height={35} className=" -z-10"/>
 
     </div>
 
@@ -274,7 +274,7 @@ export default function Home() {
       <div className="justify-items-start align-center space-y-2">
         <h3>Student Project</h3>
         <h1 className="text-2xl" >CIPHER PROJECT</h1>
-        <p className='bg-grey2 text-white text-lg z-10 p-8 -mr-28 text-left'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
+        <p className='bg-grey2 text-white text-lg  p-8 -mr-28 text-left relative z-10'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
         <ul className="flex felx-row space-x-6">
           <li>JavaScript</li>
           <li>HTML</li>
@@ -284,12 +284,11 @@ export default function Home() {
       </div>
 
       <img src="/images/Cipher.png" alt={`image`} width={650} height={35} className=""/>
-      
-
     </div>
+    
 
     <div className="flex justify-center">
-      <button className="group relative inline-flex h-12 items-center my-8 justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-3 font-medium text-neutral-600 transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)] w-auto">
+      <button className="group relative inline-flex text-white h-12 items-center my-8 justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-3 font-medium text-neutral-600 transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)] w-auto">
         Extra Projects
       </button>
     </div>
@@ -297,12 +296,53 @@ export default function Home() {
 
     </section>
 
-    <h1 className="text-5xl  text-center mx-auto my-24 ">---- CONTACT ME ----</h1>
+    <h1 className="text-5xl text-white text-center mx-auto my-24 ">---- CONTACT ME ----</h1>
 
-    <section id="contact" className="backdrop-opacity-20 bg-grey flex flex-col mx-auto min-h-20 my-20 max-w-screen-lg px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
-        <div>
-
-        </div>
+    <section id="contact" className=" text-white flex flex-col mx-auto min-h-20 my-20 max-w-screen-lg px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+      <div class="max-w-4xl mx-auto p-6 bg-opacity-20 bg-grey rounded-lg shadow-lg text-blue-200">
+        <form class="space-y-4">
+          <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+            <div class="w-full md:w-1/2">
+              <label for="name" class="text-blue block text-lg mb-2">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
+              />
+            </div>
+            
+            <div class="w-full md:w-1/2">
+              <label for="email" class="text-blue block text-lg mb-2">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
+              />
+            </div>
+          </div>
+          
+          <div>
+            <label for="message" class=" text-blue block text-lg mb-2">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full p-2 rounded bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
+            ></textarea>
+          </div>
+          
+          <div class="flex justify-center">
+            <button 
+              type="submit"
+              class="px-12 py-2 bg-blue-600 hover:bg-blue-700 border border-white text-white font-semibold rounded transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
 
     </>

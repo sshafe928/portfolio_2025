@@ -5,14 +5,17 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",],
   theme: {
-    extend: {},
-    colors:{
-      primary: "#FFFF",
-      secondary: "#4c5e8d",
-      grey:"#D9D9D9",
-      grey2:'#3B4C6B',
-      white: "#FFFFFF"
+    extend: {
+      colors:{
+        primary: "#01102A",
+        secondary: "#4c5e8d",
+        grey:"#D9D9D9",
+        grey2:'#3B4C6B',
+        white: "#FFFFFF",
+        blue: "#26A1F9"
+      },
     },
+    
   },
   plugins: [
     require('daisyui')
