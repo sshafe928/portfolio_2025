@@ -12,12 +12,12 @@ export default function Home() {
         <div className=" text-white lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:justify-between lg:py-24">
           <h1 className="text-4xl font-bold tracking-tight  sm:text-5xl">Sabrina Shafer</h1>
           <h3 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">Coding Student</h3>
-          <p className="mt-4 max-w-xs leading-normal">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
+          <p className="mt-4 max-w-xs leading-normal text-grey/80">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
           <ul className="mt-16 w-max">
             <li>
               <a className= "group flex items-center py-3 active" href="#">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> About </span>
+                <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
+                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> About </span>
               </a>
             </li>
             <li>
@@ -28,14 +28,14 @@ export default function Home() {
             </li>
             <li>
               <a className= "group flex items-center py-3 active" href="#experience">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Experience </span>
+                <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
+                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Experience </span>
               </a>
             </li>
             <li>
               <a className= "group flex items-center py-3 active" href="#projects">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Projects </span>
+                <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
+                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Projects </span>
               </a>
             </li>
           </ul>
@@ -43,14 +43,14 @@ export default function Home() {
         
         <div className= "text-white pt-24 lg:w-[52%] lg:py-24">
           <section className="mb-16">
-            <p className="mb-4">I'm a motivated and detail-oriented student with a strong academic background, maintaining an A average across all subjects. I thrive in leadership roles, having taken on responsibilities through school athletics and West-MEC activities, where I’ve developed teamwork, communication, and organizational skills.</p>
-            <p className="mb-4">My passion lies in computer science and web development, where I enjoy blending logical problem-solving with thoughtful design. I’ve built a solid foundation in UX principles and front-end technologies including JavaScript, CSS, HTML, Python, React.js, and MongoDB, and I’m always eager to expand that knowledge.</p>
-            <p className="mb-4">I’m currently exploring opportunities to apply what I’ve learned in the classroom to real-world challenges. Whether I’m managing projects or diving into code, I take pride in delivering high-quality work and approaching each task with curiosity, efficiency, and a willingness to learn.</p>
-            <p className="mb-4">Outside of academics, I’m constantly learning—whether that’s picking up new coding concepts, collaborating on group projects, or exploring creative problem-solving techniques. I'm passionate about continued growth and excited to contribute to environments where I can learn, build, and make a meaningful impact.</p>
+            <p className="mb-4 text-grey/80">I'm a motivated and detail-oriented student with a strong academic background, maintaining an A average across all subjects. I thrive in leadership roles, having taken on responsibilities through school athletics and West-MEC activities, where I’ve developed teamwork, communication, and organizational skills.</p>
+            <p className="mb-4 text-grey/80">My passion lies in computer science and web development, where I enjoy blending logical problem-solving with thoughtful design. I’ve built a solid foundation in UX principles and front-end technologies including JavaScript, CSS, HTML, Python, React.js, and MongoDB, and I’m always eager to expand that knowledge.</p>
+            <p className="mb-4 text-grey/80">I’m currently exploring opportunities to apply what I’ve learned in the classroom to real-world challenges. Whether I’m managing projects or diving into code, I take pride in delivering high-quality work and approaching each task with curiosity, efficiency, and a willingness to learn.</p>
+            <p className="mb-4 text-grey/80">Outside of academics, I’m constantly learning—whether that’s picking up new coding concepts, collaborating on group projects, or exploring creative problem-solving techniques. I'm passionate about continued growth and excited to contribute to environments where I can learn, build, and make a meaningful impact.</p>
           </section>
 
-          <section id="languages" className="text-white mb-32">
-            <div className="m-3 mb-20">
+          <section id="languages" className="text-white mb-32 group">
+            <div className="m-3 mb-20 ">
               <ul className="space-y-4">
                 {[
                   { lang: "English", percent: 100, flag: "/images/english-flag.png" },
@@ -58,7 +58,7 @@ export default function Home() {
                   { lang: "Japanese", percent: 15, flag: "/images/japan-flag.png" },
                   { lang: "Spanish", percent: 5, flag: "/images/spanish-flag.png" },
                 ].map(({ lang, percent, flag }) => (
-                  <li key={lang} className="flex items-center space-x-4">
+                  <li key={lang} className="flex items-center space-x-4 px-4 py-2 rounded-lg transition-all duration-300 group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                     {/* Flag on the left */}
                     <img src={flag} alt={`${lang} flag`} width={45} height={35} />
 
@@ -95,7 +95,7 @@ export default function Home() {
                   { lang: "TypeScript", percent: 5, flag: "/images/typescript.png" },
                   { lang: "MongoDB", percent: 5, flag: "/images/mongodb.png" },
                 ].map(({ lang, percent, flag }) => (
-                  <li key={lang} className="flex items-center space-x-4">
+                  <li key={lang} className="flex items-center space-x-4 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                     {/* icon on the left */}
                     <img src={flag} alt={`${lang} flag`} width={40} height={30} />
 
@@ -123,69 +123,69 @@ export default function Home() {
 
 
           <section id="experience" className="text-white">
-            <div>
+            <div className="group">
               <ol>
-                <li className="mb-11">
+                <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                    <header>2025</header>
+                    <header className="text-grey/80">2025</header>
                     <div>
                       <h3>Texas Roadhouse</h3>
-                      <p>As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
+                      <p className="text-grey/80">As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Multi-tasking</div></li>
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Communication</div></li>
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Customer Service</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Multi-tasking</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Communication</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Customer Service</div></li>
                       </ul>
                     </div>
                   </div>
                 </li>
 
-                <li className="mb-11">
+                <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                    <header>2025</header>
+                    <header className="text-grey/80">2025</header>
                     <div>
                       <h3>Texas Roadhouse</h3>
-                      <p>As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
+                      <p className="text-grey/80">As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Multi-tasking</div></li>
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Communication</div></li>
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Customer Service</div></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-
-                <li className="mb-11">
-                  <div className="flex flex-row gap-x-6">
-                    <header>2025</header>
-                    <div>
-                      <h3>Texas Roadhouse</h3>
-                      <p>As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
-                      <ul className="mt-2 flex flex-wrap">
-
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Multi-tasking</div></li>
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Communication</div></li>
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Customer Service</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Multi-tasking</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Communication</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Customer Service</div></li>
                       </ul>
                     </div>
                   </div>
                 </li>
 
 
-                <li className="mb-11">
+                <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                    <header>2025</header>
+                    <header className="text-grey/80">2025</header>
                     <div>
                       <h3>Texas Roadhouse</h3>
-                      <p>As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
+                      <p className="text-grey/80">As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Multi-tasking</div></li>
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Communication</div></li>
-                        <li className="mr-2 mt-2"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 ">Customer Service</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Multi-tasking</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Communication</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Customer Service</div></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
+                  <div className="flex flex-row gap-x-6">
+                    <header className="text-grey/80">2025</header>
+                    <div>
+                      <h3>Texas Roadhouse</h3>
+                      <p className="text-grey/80">As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
+                      <ul className="mt-2 flex flex-wrap">
+
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Multi-tasking</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Communication</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Customer Service</div></li>
                       </ul>
 
                     
@@ -209,8 +209,11 @@ export default function Home() {
     </div>
 
 
-        <h1 className="text-5xl text-white text-center mx-auto my-24 ">---- PROJECTS ----</h1>
-
+    <div className="flex items-center justify-center my-24">
+      <hr className="h-px w-24 bg-white mr-4" />
+      <h1 className="text-5xl text-white text-center">PROJECTS</h1>
+      <hr className="h-px w-24 bg-white ml-4" />
+    </div>
 
     <section id="projects" className="text-white flex flex-col mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0  ">
 
@@ -296,47 +299,51 @@ export default function Home() {
 
     </section>
 
-    <h1 className="text-5xl text-white text-center mx-auto my-24 ">---- CONTACT ME ----</h1>
+    <div className="flex items-center justify-center my-24">
+      <hr className="h-px w-24 bg-white mr-4" />
+      <h1 className="text-5xl text-white text-center">CONTACT ME</h1>
+      <hr className="h-px w-24 bg-white ml-4" />
+    </div>
 
-    <section id="contact" className=" text-white flex flex-col mx-auto min-h-20 my-20 max-w-screen-lg px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
-      <div class="max-w-4xl mx-auto p-6 bg-opacity-20 bg-grey rounded-lg shadow-lg text-blue-200">
-        <form class="space-y-4">
-          <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
-            <div class="w-full md:w-1/2">
-              <label for="name" class="text-blue block text-lg mb-2">Name:</label>
+    <section id="contact" className=" text-white  justify-items-center flex flex-col mx-auto  min-h-20 my-20 max-w-screen-lg px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+      <div className="max-w-4xl mx-4 p-6 bg-opacity-20 bg-grey rounded-lg shadow-lg text-blue-200">
+        <form className="space-y-4">
+          <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+            <div className="w-full md:w-1/2">
+              <label htmlFor="name" className="text-blue block text-lg mb-2">Name:</label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                class="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
+                className="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
               />
             </div>
             
-            <div class="w-full md:w-1/2">
-              <label for="email" class="text-blue block text-lg mb-2">Email:</label>
+            <div className="w-full md:w-1/2">
+              <label htmlFor="email" className="text-blue block text-lg mb-2">Email:</label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                class="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
+                className="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
               />
             </div>
           </div>
           
           <div>
-            <label for="message" class=" text-blue block text-lg mb-2">Message:</label>
+            <label htmlFor="message" className=" text-blue block text-lg mb-2">Message:</label>
             <textarea
               id="message"
               name="message"
               rows="4"
-              class="w-full p-2 rounded bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
+              className="w-full p-2 rounded bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
             ></textarea>
           </div>
           
-          <div class="flex justify-center">
+          <div className="flex justify-center">
             <button 
               type="submit"
-              class="px-12 py-2 bg-blue-600 hover:bg-blue-700 border border-white text-white font-semibold rounded transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              className="px-12 py-2 bg-blue-600 hover:bg-blue-700 border border-white text-white font-semibold rounded transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             >
               Send
             </button>
@@ -344,6 +351,7 @@ export default function Home() {
         </form>
       </div>
     </section>
+
 
     </>
   );
