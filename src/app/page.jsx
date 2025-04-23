@@ -12,32 +12,32 @@ export default function Home() {
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
       <div className='lg:flex lg:justify-between lg:gap-4'>
         <div className=" text-white lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:justify-between lg:py-24">
-          <h1 className="text-4xl font-bold tracking-tight  sm:text-5xl">Sabrina Shafer</h1>
-          <h3 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">Coding Student</h3>
-          <p className="mt-4 max-w-xs leading-normal text-grey/80">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
+          <h1 className="text-4xl font-bold  font-jaro tracking-wider sm:text-5xl">Sabrina Shafer</h1>
+          <h3 className="mt-3 text-xl font-medium  font-jersey tracking-wide sm:text-xl">Coding Student</h3>
+          <p className="mt-4 max-w-xs leading-normal text-grey/80 font-plexMono">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
           <ul className="mt-16 w-max">
             <li>
               <a className= "group flex items-center py-3 active" href="#">
                 <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
-                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> About </span>
+                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 font-jaro"> About </span>
               </a>
             </li>
             <li>
               <a className= "group flex items-center py-3 active" href="#languages">
                 <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
-                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Languages </span>
+                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 font-jaro"> Languages </span>
               </a>
             </li>
             <li>
               <a className= "group flex items-center py-3 active" href="#experience">
                 <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
-                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Experience </span>
+                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 font-jaro"> Experience </span>
               </a>
             </li>
             <li>
               <a className= "group flex items-center py-3 active" href="#projects">
                 <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
-                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"> Projects </span>
+                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 font-jaro"> Projects </span>
               </a>
             </li>
           </ul>
@@ -45,10 +45,10 @@ export default function Home() {
         
         <div className= "text-white pt-24 lg:w-[52%] lg:py-24">
           <section className="mb-16">
-            <p className="mb-4 text-grey/80">I'm a motivated and detail-oriented student with a strong academic background, maintaining an A average across all subjects. I thrive in leadership roles, having taken on responsibilities through school athletics and West-MEC activities, where I’ve developed teamwork, communication, and organizational skills.</p>
-            <p className="mb-4 text-grey/80">My passion lies in computer science and web development, where I enjoy blending logical problem-solving with thoughtful design. I’ve built a solid foundation in UX principles and front-end technologies including JavaScript, CSS, HTML, Python, React.js, and MongoDB, and I’m always eager to expand that knowledge.</p>
-            <p className="mb-4 text-grey/80">I’m currently exploring opportunities to apply what I’ve learned in the classroom to real-world challenges. Whether I’m managing projects or diving into code, I take pride in delivering high-quality work and approaching each task with curiosity, efficiency, and a willingness to learn.</p>
-            <p className="mb-4 text-grey/80">Outside of academics, I’m constantly learning—whether that’s picking up new coding concepts, collaborating on group projects, or exploring creative problem-solving techniques. I'm passionate about continued growth and excited to contribute to environments where I can learn, build, and make a meaningful impact.</p>
+            <p className="mb-4 text-grey/80 font-plexMono">I'm a motivated and detail-oriented student with a strong academic background, maintaining an A average across all subjects. I thrive in leadership roles, having taken on responsibilities through school athletics and West-MEC activities, where I’ve developed teamwork, communication, and organizational skills.</p>
+            <p className="mb-4 text-grey/80 font-plexMono">My passion lies in computer science and web development, where I enjoy blending logical problem-solving with thoughtful design. I’ve built a solid foundation in UX principles and front-end technologies including JavaScript, CSS, HTML, Python, React.js, and MongoDB, and I’m always eager to expand that knowledge.</p>
+            <p className="mb-4 text-grey/80 font-plexMono">I’m currently exploring opportunities to apply what I’ve learned in the classroom to real-world challenges. Whether I’m managing projects or diving into code, I take pride in delivering high-quality work and approaching each task with curiosity, efficiency, and a willingness to learn.</p>
+            <p className="mb-4 text-grey/80 font-plexMono">Outside of academics, I’m constantly learning—whether that’s picking up new coding concepts, collaborating on group projects, or exploring creative problem-solving techniques. I'm passionate about continued growth and excited to contribute to environments where I can learn, build, and make a meaningful impact.</p>
           </section>
 
           <section id="languages" className="text-white mb-32 group">
@@ -68,8 +68,8 @@ export default function Home() {
                     <div className="flex-1">
                       {/* Title row */}
                       <div className="flex justify-between items-center">
-                        <h1 className="text-lg font-semibold">{lang}</h1>
-                        <span className="text-sm font-medium">{percent}%</span>
+                        <h1 className="text-lg font-semibold tracking-wide font-jaro">{lang}</h1>
+                        <span className="text-sm font-medium tracking-wide font-jaro">{percent}%</span>
                       </div>
 
                       {/* Progress bar */}
@@ -105,8 +105,8 @@ export default function Home() {
                     <div className="flex-1">
                       {/* Title row */}
                       <div className="flex justify-between items-center">
-                        <h1 className="text-lg font-semibold">{lang}</h1>
-                        <span className="text-sm font-medium">{percent}%</span>
+                        <h1 className="text-lg font-semibold tracking-wide font-jaro">{lang}</h1>
+                        <span className="text-sm font-medium tracking-wide font-jaro">{percent}%</span>
                       </div>
 
                       {/* Progress bar */}
@@ -129,17 +129,17 @@ export default function Home() {
               <ol>
                 <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                  <header className="text-sm text-grey/80 flex  gap-x-2">2024<span className="h-4 w-px bg-white mx-2 inline-block"></span>Present</header>                    
+                  <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono">2024<span className="h-4 w-px bg-white mx-2 inline-block"></span>Present</header>                    
                     <div>
                       <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
-                        <h3 className="flex items-center text-lg">Hostess, Texas Roadhouse    <GoArrowUpRight className="ml-4" /></h3>
+                        <h3 className="flex items-center text-lg font-jaro tracking-wide">Hostess, Texas Roadhouse    <GoArrowUpRight className="ml-4" /></h3>
                       </a>
                       <p className="text-grey/80">As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Multi-tasking</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Communication</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Customer Service</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Multi-tasking</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Communication</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Customer Service</div></li>
                       </ul>
                     </div>
                   </div>
@@ -147,17 +147,17 @@ export default function Home() {
 
                 <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                  <header className="text-sm text-grey/80 flex  gap-x-2">2021<span className="h-4 w-px bg-white mx-2 inline-block"></span>2024</header>                    
+                  <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono">2021<span className="h-4 w-px bg-white mx-2 inline-block"></span>2024</header>                    
                     <div>
                     <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
-                        <h3 className="flex text-lg items-center">Student, Ridgeline Academy    <GoArrowUpRight className="ml-4"/></h3>
+                        <h3 className="flex text-lg items-center font-jaro tracking-wide">Student, Ridgeline Academy    <GoArrowUpRight className="ml-4"/></h3>
                       </a>
                       <p className="text-grey/80">I graduated early from Ridgeline Academy, a charter school, by accelerating my coursework and earning extra credits. During my time there, I was recognized for academic excellence, leadership, and community involvement, gaining a strong, versatile foundation for future pursuits.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">General Education</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Diploma</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">NHS</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">General Education</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Diploma</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">NHS</div></li>
                       </ul>
                     </div>
                   </div>
@@ -166,19 +166,19 @@ export default function Home() {
 
                 <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                  <header className="text-sm text-grey/80 flex gap-x-2">2023<span className="h-4 w-px bg-white mx-2 inline-block"></span>2025</header>                    <div>
+                  <header className="text-sm text-grey/80 flex gap-x-2 font-plexMono">2023<span className="h-4 w-px bg-white mx-2 inline-block"></span>2025</header>                    <div>
                       <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
-                        <h3 className="flex text-lg items-center">Student, West-MEC Coding Program <GoArrowUpRight className="ml-4"/></h3>
+                        <h3 className="flex text-lg items-center font-jaro tracking-wide">Student, West-MEC Coding Program <GoArrowUpRight className="ml-4"/></h3>
                       </a>
                       <p className="text-grey/80">As a West-MEC student in the coding program, I learned multiple programming languages, website development, and database fundamentals. I was also actively involved in FBLA for two years, attending events and serving as a chapter officer.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Certifications</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">HTML</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">CSS</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Python</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">JS</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">TS</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Certifications</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">HTML</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">CSS</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Python</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">JS</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">TS</div></li>
                       </ul>
                     </div>
                   </div>
@@ -187,18 +187,18 @@ export default function Home() {
 
                 <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                    <header className="text-sm text-grey/80 text-nowrap">2025</header>
+                    <header className="text-sm text-grey/80 text-nowrap font-plexMono">2025</header>
                     <div>
                       <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
-                        <h3 className="flex text-lg items-center">Scrum Master, Work Based Learning <GoArrowUpRight className="ml-4" /></h3>
+                        <h3 className="flex text-lg items-center font-jaro tracking-wide">Scrum Master, Work Based Learning <GoArrowUpRight className="ml-4" /></h3>
                       </a>
                       <p className="text-grey/80">As part of the West-MEC coding program, I led a work-based learning project as Scrum Master, where my team built and launched a website from the ground up for Boy Scout Troop 747. We integrated it with MongoDB and successfully deployed it on a hosting platform.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">SCRUM</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">React.js</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Node.js</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Tailwind</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">SCRUM</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">React.js</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Node.js</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Tailwind</div></li>
 
                       </ul>
 
@@ -211,7 +211,7 @@ export default function Home() {
 
             <a href="/files/resume.png" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
             <div className="flex items-center space-x-2">
-                <h1 className="text-base font-medium">View Full Resume</h1>
+                <h1 className="text-base font-medium font-plexMono">View Full Resume</h1>
                 <MdArrowOutward className="w-5 h-5" />
             </div>
             </a>
@@ -225,7 +225,7 @@ export default function Home() {
 
     <div className="flex items-center justify-center my-24">
       <hr className="h-px w-24 bg-white mr-4" />
-      <h1 className="text-5xl text-white text-center">PROJECTS</h1>
+      <h1 className="text-5xl text-white text-center font-jaro">PROJECTS</h1>
       <hr className="h-px w-24 bg-white ml-4" />
     </div>
 
@@ -237,13 +237,13 @@ export default function Home() {
     <img src="/images/FBLA.png" alt={`image`} width={650} height={35} />
 
       <div className="justify-items-end align-center space-y-2">
-        <h3 className="text-blue">Student Project</h3>
-        <h1 className="text-2xl">FBLA CODING & PROGRAMMING</h1>
-        <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right'>A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
+        <h3 className="text-blue font-plexMono">Student Project</h3>
+        <h1 className="text-2xl font-plexMono">FBLA CODING & PROGRAMMING</h1>
+        <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right font-plexMono'>A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
         <ul className="flex felx-row space-x-6">
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">React.js</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">Node.js</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">Tailwind</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
         </ul>
         <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
       </div>
@@ -253,13 +253,13 @@ export default function Home() {
     <div className="flex items-center mb-24">
 
       <div className="justify-items-start align-center space-y-2">
-        <h3 className="text-blue">Work based Learning Project</h3>
-        <h1 className="text-2xl" >BOY SCOUT TROOP 747</h1>
-        <p className='bg-grey2 text-white text-lg relative z-20 p-8 -mr-28 text-left'>A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation. </p>
+        <h3 className="text-blue font-plexMono">Work based Learning Project</h3>
+        <h1 className="text-2xl font-plexMono" >BOY SCOUT TROOP 747</h1>
+        <p className='bg-grey2 text-white text-lg relative z-20 p-8 -mr-28 text-left font-plexMono'>A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation. </p>
         <ul className="flex felx-row space-x-6">
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">React.js</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">Node.js</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">Tailwind</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
         </ul>
         <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
       </div>
@@ -273,13 +273,13 @@ export default function Home() {
     <img src="/images/pet.png" alt={`image`} width={650} height={35} />
 
       <div className="justify-items-end align-center space-y-2">
-        <h3 className="text-blue">Student Project</h3>
-        <h1 className="text-2xl">PET ADOPTION WEBSITE</h1>
-        <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right'>A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
+        <h3 className="text-blue font-plexMono">Student Project</h3>
+        <h1 className="text-2xl font-plexMono">PET ADOPTION WEBSITE</h1>
+        <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right font-plexMono'>A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
         <ul className="flex felx-row space-x-6">
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">EJSs</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">CSS</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">JavaScript</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">EJSs</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
         </ul>
         <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
       </div>
@@ -289,13 +289,13 @@ export default function Home() {
     <div className="flex items-center mb-24">
 
       <div className="justify-items-start align-center space-y-2">
-        <h3 className="text-blue">Student Project</h3>
-        <h1 className="text-2xl" >CIPHER PROJECT</h1>
-        <p className='bg-grey2 text-white text-lg  p-8 -mr-28 text-left relative z-10'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
+        <h3 className="text-blue font-plexMono">Student Project</h3>
+        <h1 className="text-2xl font-plexMono" >CIPHER PROJECT</h1>
+        <p className='bg-grey2 text-white text-lg  p-8 -mr-28 text-left relative z-10 font-plexMono'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
         <ul className="flex felx-row space-x-6">
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">JavaScript</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">HTML</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 ">CSS</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">HTML</li>
+          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
         </ul>
         <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
       </div>
@@ -305,7 +305,7 @@ export default function Home() {
     
 
     <div className="flex justify-center">
-      <button className="group relative inline-flex text-white h-12 items-center my-8 justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-3 font-medium text-neutral-600 transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)] w-auto">
+      <button className="font-jersey text-xl group relative inline-flex text-white h-12 items-center my-8 justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-3 font-medium text-neutral-600 transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)] w-auto">
         Extra Projects
       </button>
     </div>
@@ -315,7 +315,7 @@ export default function Home() {
 
     <div className="flex items-center justify-center my-24">
       <hr className="h-px w-24 bg-white mr-4" />
-      <h1 className="text-5xl text-white text-center">CONTACT ME</h1>
+      <h1 className="text-5xl text-white text-center font-jaro">CONTACT ME</h1>
       <hr className="h-px w-24 bg-white ml-4" />
     </div>
 

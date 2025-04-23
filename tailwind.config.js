@@ -14,6 +14,11 @@ module.exports = {
         white: "#FFFFFF",
         blue: "#26A1F9"
       },
+      fontFamily: {
+        'jersey': ['jersey', 'sans-serif'], 
+        'jaro': ['jaro', 'sans-serif'],
+        'plexMono': ['plexMono', 'sans-serif']
+      },
     },
     
   },
