@@ -319,13 +319,13 @@ export default function Home() {
 
     </section>
 
-    <div className="flex items-center justify-center my-24">
+    <div  className="flex items-center justify-center my-24">
       <hr className="h-px w-24 bg-white mr-4" />
       <h1 className="text-5xl text-white text-center font-jaro">CONTACT ME</h1>
       <hr className="h-px w-24 bg-white ml-4" />
     </div>
 
-    <section id="contact" className=" text-white  justify-items-center flex flex-col mx-auto  min-h-20 my-20 max-w-screen-lg px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+    <section data-aos="zoom-in-up" id="contact" className=" text-white  justify-items-center flex flex-col mx-auto  min-h-20 my-20 max-w-screen-lg px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
       <div className="max-w-4xl mx-4 p-6 bg-opacity-20 bg-grey rounded-lg shadow-lg text-blue-200">
         <form className="space-y-4">
           <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
