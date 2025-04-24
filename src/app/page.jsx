@@ -129,17 +129,17 @@ export default function Home() {
               <ol>
                 <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                  <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono">2024<span className="h-4 w-px bg-white mx-2 inline-block"></span>Present</header>                    
+                  <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono mt-1">2024<span className="h-4 w-px bg-white mx-2 inline-block"></span>Present</header>                    
                     <div>
                       <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
-                        <h3 className="flex items-center text-lg font-jaro tracking-wide">Hostess, Texas Roadhouse    <GoArrowUpRight className="ml-4" /></h3>
+                        <h3 className="flex items-center text-2xl font-jaro tracking-wide">Hostess, Texas Roadhouse    <GoArrowUpRight className="ml-4" /></h3>
                       </a>
                       <p className="text-grey/80">As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Multi-tasking</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Communication</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">Customer Service</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue ">Multi-tasking</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue ">Communication</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue ">Customer Service</div></li>
                       </ul>
                     </div>
                   </div>
@@ -147,17 +147,17 @@ export default function Home() {
 
                 <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                  <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono">2021<span className="h-4 w-px bg-white mx-2 inline-block"></span>2024</header>                    
+                  <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono mt-1">2021<span className="h-4 w-px bg-white mx-2 inline-block"></span>2024</header>                    
                     <div>
                     <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
-                        <h3 className="flex text-lg items-center font-jaro tracking-wide">Student, Ridgeline Academy    <GoArrowUpRight className="ml-4"/></h3>
+                        <h3 className="flex text-2xl items-center font-jaro tracking-wide">Student, Ridgeline Academy    <GoArrowUpRight className="ml-4"/></h3>
                       </a>
                       <p className="text-grey/80">I graduated early from Ridgeline Academy, a charter school, by accelerating my coursework and earning extra credits. During my time there, I was recognized for academic excellence, leadership, and community involvement, gaining a strong, versatile foundation for future pursuits.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">General Education</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Diploma</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">NHS</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">General Education</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">Diploma</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">NHS</div></li>
                       </ul>
                     </div>
                   </div>
@@ -166,19 +166,18 @@ export default function Home() {
 
                 <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                  <header className="text-sm text-grey/80 flex gap-x-2 font-plexMono">2023<span className="h-4 w-px bg-white mx-2 inline-block"></span>2025</header>                    <div>
+                  <header className="text-sm text-grey/80 flex gap-x-2 font-plexMono  mt-1">2023<span className="h-4 w-px bg-white mx-2 inline-block"></span>2025</header>                    <div>
                       <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
-                        <h3 className="flex text-lg items-center font-jaro tracking-wide">Student, West-MEC Coding Program <GoArrowUpRight className="ml-4"/></h3>
+                        <h3 className="flex text-2xl items-center font-jaro tracking-wide">Student, West-MEC Coding Program <GoArrowUpRight className="ml-4"/></h3>
                       </a>
                       <p className="text-grey/80">As a West-MEC student in the coding program, I learned multiple programming languages, website development, and database fundamentals. I was also actively involved in FBLA for two years, attending events and serving as a chapter officer.</p>
                       <ul className="mt-2 flex flex-wrap">
-
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Certifications</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">HTML</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">CSS</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Python</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">JS</div></li>
-                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">TS</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">Certifications</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">HTML</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">CSS</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">Python</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">JS</div></li>
+                        <li className="mr-1 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono "><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">TS</div></li>
                       </ul>
                     </div>
                   </div>
@@ -187,18 +186,18 @@ export default function Home() {
 
                 <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
-                    <header className="text-sm text-grey/80 text-nowrap font-plexMono">2025</header>
+                    <header className="text-sm text-grey/80 text-nowrap font-plexMono  mt-1">2025</header>
                     <div>
                       <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
-                        <h3 className="flex text-lg items-center font-jaro tracking-wide">Scrum Master, Work Based Learning <GoArrowUpRight className="ml-4" /></h3>
+                        <h3 className="flex text-2xl items-center font-jaro tracking-wide">Scrum Master, Work Based Learning <GoArrowUpRight className="ml-4" /></h3>
                       </a>
                       <p className="text-grey/80">As part of the West-MEC coding program, I led a work-based learning project as Scrum Master, where my team built and launched a website from the ground up for Boy Scout Troop 747. We integrated it with MongoDB and successfully deployed it on a hosting platform.</p>
                       <ul className="mt-2 flex flex-wrap">
 
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue ">SCRUM</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">React.js</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Node.js</div></li>
-                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 text-blue">Tailwind</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue ">SCRUM</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">React.js</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">Node.js</div></li>
+                        <li className="mr-2 mt-2 px-2 py-1 rounded-full bg-blue/10 font-plexMono"><div className="flex items-center rounded-full px-1 py-1 text-xs font-medium leading-5 text-blue">Tailwind</div></li>
 
                       </ul>
 
@@ -233,74 +232,81 @@ export default function Home() {
 
 
 
-    <div className="flex items-center mb-24">
-    <img src="/images/FBLA.png" alt={`image`} width={650} height={35} />
+    <div  className="flex items-center mb-24">
+    <img data-aos="fade-right" src="/images/FBLA.png" alt={`image`} width={650} height={35} />
 
-      <div className="justify-items-end align-center space-y-2">
-        <h3 className="text-blue font-plexMono">Student Project</h3>
-        <h1 className="text-2xl font-plexMono">FBLA CODING & PROGRAMMING</h1>
-        <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right font-plexMono'>A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
-        <ul className="flex felx-row space-x-6">
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
-        </ul>
-        <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
+      <div data-aos="fade-left">
+        <div className="justify-items-end align-center space-y-2">
+          <h3 className="text-blue font-plexMono">Student Project</h3>
+          <h1 className="text-2xl font-plexMono">FBLA CODING & PROGRAMMING</h1>
+          <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right font-plexMono'>A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
+          <ul className="flex felx-row space-x-6">
+            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
+            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
+            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
+          </ul>
+          <div className="flex flex-row space-x-4"><LuGithub /></div>
+        </div>
       </div>
     </div>
 
 
     <div className="flex items-center mb-24">
+              
+        <div data-aos="fade-right">
+          <div className="justify-items-start align-center space-y-2">
+            <h3 className="text-blue font-plexMono">Work based Learning Project</h3>
+            <h1 className="text-2xl font-plexMono" >BOY SCOUT TROOP 747</h1>
+            <p className='bg-grey2 text-white text-lg relative z-10 p-8 -mr-28 text-left font-plexMono'>A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation. </p>
+            <ul className="flex felx-row space-x-6">
+              <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
+              <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
+              <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
+            </ul>
+            <div className="flex flex-row space-x-4"><LuGithub /></div>
+          </div>
+        </div>
 
-      <div className="justify-items-start align-center space-y-2">
-        <h3 className="text-blue font-plexMono">Work based Learning Project</h3>
-        <h1 className="text-2xl font-plexMono" >BOY SCOUT TROOP 747</h1>
-        <p className='bg-grey2 text-white text-lg relative z-20 p-8 -mr-28 text-left font-plexMono'>A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation. </p>
-        <ul className="flex felx-row space-x-6">
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
-        </ul>
-        <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
+        <img data-aos="fade-left" src="/images/scout.png" alt={`image`} width={650} height={35} className="-z-0 relative"/>
+
       </div>
 
-      <img src="/images/Cipher.png" alt={`image`} width={650} height={35} className=" -z-10"/>
 
+    <div className="flex items-center mb-24">
+    <img data-aos="fade-right" src="/images/pet.png" alt={`image`} width={650} height={35} />
+
+      <div data-aos="fade-left">
+        <div className="justify-items-end align-center space-y-2">
+          <h3 className="text-blue font-plexMono">Student Project</h3>
+          <h1 className="text-2xl font-plexMono">PET ADOPTION WEBSITE</h1>
+          <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right font-plexMono'>A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
+          <ul className="flex felx-row space-x-6">
+            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">EJS</li>
+            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
+            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
+          </ul>
+          <div className="flex flex-row space-x-4"><LuGithub /></div>
+        </div>
+      </div>
     </div>
 
 
     <div className="flex items-center mb-24">
-    <img src="/images/pet.png" alt={`image`} width={650} height={35} />
-
-      <div className="justify-items-end align-center space-y-2">
-        <h3 className="text-blue font-plexMono">Student Project</h3>
-        <h1 className="text-2xl font-plexMono">PET ADOPTION WEBSITE</h1>
-        <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right font-plexMono'>A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
-        <ul className="flex felx-row space-x-6">
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">EJSs</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
-        </ul>
-        <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
-      </div>
-    </div>
-
-
-    <div className="flex items-center mb-24">
-
-      <div className="justify-items-start align-center space-y-2">
-        <h3 className="text-blue font-plexMono">Student Project</h3>
-        <h1 className="text-2xl font-plexMono" >CIPHER PROJECT</h1>
-        <p className='bg-grey2 text-white text-lg  p-8 -mr-28 text-left relative z-10 font-plexMono'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
-        <ul className="flex felx-row space-x-6">
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">HTML</li>
-          <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
-        </ul>
-        <div className="flex flex-row space-x-4"><LuGithub /><AiOutlineExport /></div>
+      <div data-aos="fade-right">
+        <div className="justify-items-start align-center space-y-2">
+          <h3 className="text-blue font-plexMono">Student Project</h3>
+          <h1 className="text-2xl font-plexMono" >CIPHER PROJECT</h1>
+          <p className='bg-grey2 text-white text-lg  p-8 -mr-28 text-left relative z-10 font-plexMono'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
+          <ul className="flex felx-row space-x-6">
+            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
+            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">HTML</li>
+            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
+          </ul>
+          <div className="flex flex-row space-x-4"><LuGithub /></div>
+        </div>
       </div>
 
-      <img src="/images/Cipher.png" alt={`image`} width={650} height={35} className=""/>
+      <img  data-aos="fade-left" src="/images/Cipher.png" alt={`image`} width={650} height={35} className="hover:bg-blue/90"/>
     </div>
     
 

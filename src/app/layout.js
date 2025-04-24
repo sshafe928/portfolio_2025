@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import AOSInitializer from "@/app/components/AOSInitializer";
 
 import "./globals.css";
 
@@ -21,8 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-primary">
       <body
+
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary `}
       >
+        <AOSInitializer/>
         {children}
       </body>
     </html>
