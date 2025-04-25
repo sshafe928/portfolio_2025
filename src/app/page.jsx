@@ -24,6 +24,9 @@ export default function Home() {
       end: '+=2300'
     });
   }, { scope: elementRef });
+
+
+
   return (
     <>
     <div className="mx-auto min-h-16 max-w-screen-xl px-6 py-2 font-sans md:px-12 md:py-16 lg:py-0">
@@ -328,9 +331,11 @@ export default function Home() {
     
 
     <div className="flex justify-center">
-      <button className="font-jersey text-xl group relative inline-flex text-white h-12 items-center my-8 justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-3 font-medium text-neutral-600 transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)] w-auto">
-        Extra Projects
-      </button>
+      <a href="/projects">
+        <button className="font-jersey text-xl group relative inline-flex text-white h-12 items-center my-8 justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-3 font-medium text-neutral-600 transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)] w-auto">
+          Extra Projects
+        </button>
+      </a>
     </div>
 
 
