@@ -1,17 +1,34 @@
+'use client'
 import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md";
 import { AiOutlineExport } from "react-icons/ai";
 import { LuGithub } from "react-icons/lu";
 import { GoArrowUpRight } from "react-icons/go";
+import { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+
+  const elementRef = useRef(null);
+  
+  useGSAP(() => {
+    ScrollTrigger.create({
+      trigger: elementRef.current,
+      pin: elementRef.current,
+      start: 'top top',
+      end: '+=2300'
+    });
+  }, { scope: elementRef });
   return (
     <>
-    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+    <div className="mx-auto min-h-16 max-w-screen-xl px-6 py-2 font-sans md:px-12 md:py-16 lg:py-0">
       <div className='lg:flex lg:justify-between lg:gap-4'>
-        <div className=" text-white lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:justify-between lg:py-24">
+        <div  ref={elementRef} className=" text-white lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:py-24">
           <h1 className="text-4xl font-bold  font-jaro tracking-wider sm:text-5xl">Sabrina Shafer</h1>
           <h3 className="mt-3 text-xl font-medium  font-jersey tracking-wide sm:text-xl">Coding Student</h3>
           <p className="mt-4 max-w-xs leading-normal text-grey/80 font-plexMono">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
@@ -253,7 +270,7 @@ export default function Home() {
 
     <div className="flex items-center mb-24">
               
-        <div data-aos="fade-right">
+        <div data-aos="fade-right" className="realtive z-10">
           <div className="justify-items-start align-center space-y-2">
             <h3 className="text-blue font-plexMono">Work based Learning Project</h3>
             <h1 className="text-2xl font-plexMono" >BOY SCOUT TROOP 747</h1>
@@ -291,12 +308,12 @@ export default function Home() {
     </div>
 
 
-    <div className="flex items-center mb-24">
-      <div data-aos="fade-right">
+    <div className="flex items-center mb-24 relative">
+      <div data-aos="fade-right" className="relative z-10">
         <div className="justify-items-start align-center space-y-2">
           <h3 className="text-blue font-plexMono">Student Project</h3>
           <h1 className="text-2xl font-plexMono" >CIPHER PROJECT</h1>
-          <p className='bg-grey2 text-white text-lg  p-8 -mr-28 text-left relative z-10 font-plexMono'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
+          <p className='bg-grey2 text-white text-lg  p-8 -mr-28 text-left font-plexMono'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
           <ul className="flex felx-row space-x-6">
             <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
             <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">HTML</li>
