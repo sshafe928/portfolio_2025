@@ -265,7 +265,7 @@ export default function Home() {
             <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
             <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
           </ul>
-          <div className="flex flex-row space-x-4"><LuGithub /></div>
+          <div className="flex flex-row space-x-4"><a href="https://github.com/sshafe928/cash-compass"><LuGithub /></a></div>
         </div>
       </div>
     </div>
@@ -283,7 +283,7 @@ export default function Home() {
               <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
               <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
             </ul>
-            <div className="flex flex-row space-x-4"><LuGithub /></div>
+            <div className="flex flex-row space-x-4"><a href="https://github.com/sshafe928/wbla_boyscout"><LuGithub /></a></div>
           </div>
         </div>
 
