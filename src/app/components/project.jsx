@@ -70,17 +70,22 @@ const Project = () =>{
     ]
     return (
         <>
-        <div className="flex flex-wrap gap-4 justify-center">
+        <div className="flex flex-wrap gap-6 justify-center">
             {projects.map((project) => (
                 <div
                 key={project.id}
-                className="group bg-grey/10 p-4 px-8 py-7 rounded-md w-80 flex flex-col justify-between h-full min-h-[300px] transition-all duration-300 ease-in-out hover:-translate-y-2"
+                className="group bg-grey/10 px-7 py-8 rounded-md w-full sm:w-[22rem] flex flex-col justify-between min-h-[300px] transition-all duration-300 ease-in-out hover:-translate-y-2"
                 >
                 {/* Top Section */}
                 <div>
                     <div className="flex items-center mb-4">
                     <LuFolderCode className="text-blue text-5xl" />
-                    <a href={project.gitLink} target="_blank" rel="noopener noreferrer" className="ml-auto">
+                    <a
+                        href={project.gitLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-auto"
+                    >
                         <LuGithub className="text-white group-hover:text-blue hover:text-blue-500 transition-colors duration-300 text-xl" />
                     </a>
                     </div>
@@ -89,7 +94,7 @@ const Project = () =>{
                     <h2 className="text-white text-lg font-bold group-hover:text-blue transition-colors duration-300">
                         {project.name}
                     </h2>
-                    <p className="text-white text-sm mt-2">{project.desc}</p>
+                    <p className="text-grey/50 text-sm mt-2">{project.desc}</p>
                     </div>
                 </div>
 
@@ -107,6 +112,7 @@ const Project = () =>{
                 </div>
             ))}
         </div>
+
 
         </>
     )
