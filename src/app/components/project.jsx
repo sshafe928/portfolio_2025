@@ -17,6 +17,9 @@ const project = () =>{
             desc:"This was the first project where I used React.js, and my first time using Tailwind to style. I collaborated with a classmate on this blog project.",
             gitLink: "../",
             img: "../"
+        },
+        {
+            
         }
     ]
     return (
