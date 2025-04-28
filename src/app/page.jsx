@@ -15,14 +15,40 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
 
   const elementRef = useRef(null);
-  
+  const scrollTriggerRef = useRef(null); 
+
   useGSAP(() => {
-    ScrollTrigger.create({
-      trigger: elementRef.current,
-      pin: elementRef.current,
-      start: 'top top',
-      end: '+=2300'
-    });
+    const setupScrollTrigger = () => {
+
+      if (scrollTriggerRef.current) {
+        scrollTriggerRef.current.kill();
+        scrollTriggerRef.current = null;
+      }
+
+      const width = window.innerWidth;
+      if (width >= 1024) {
+        scrollTriggerRef.current = ScrollTrigger.create({
+          trigger: elementRef.current,
+          pin: elementRef.current,
+          start: 'top top',
+          end: '+=2300',
+        });
+      }
+    };
+
+    setupScrollTrigger(); 
+
+    const handleResize = () => {
+      setupScrollTrigger();
+      ScrollTrigger.refresh();
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      if (scrollTriggerRef.current) scrollTriggerRef.current.kill();
+    };
   }, { scope: elementRef });
 
 
@@ -109,13 +135,13 @@ export default function Home() {
                 {[
                   { lang: "HTML", percent: 100, flag: "/images/html.png" },
                   { lang: "CSS", percent: 95, flag: "/images/css.png" },
-                  { lang: "JavaScript", percent: 15, flag: "/images/javascript.png" },
-                  { lang: "Tailwind", percent: 5, flag: "/images/tailwind.png" },
-                  { lang: "React.js", percent: 5, flag: "/images/react.png" },
-                  { lang: "Next.js", percent: 5, flag: "/images/next.png" },
-                  { lang: "Node.js", percent: 5, flag: "/images/node.png" },
-                  { lang: "TypeScript", percent: 5, flag: "/images/typescript.png" },
-                  { lang: "MongoDB", percent: 5, flag: "/images/mongodb.png" },
+                  { lang: "JavaScript", percent: 90, flag: "/images/javascript.png" },
+                  { lang: "Tailwind", percent: 85, flag: "/images/tailwind.png" },
+                  { lang: "React.js", percent: 85, flag: "/images/react.png" },
+                  { lang: "Next.js", percent: 65, flag: "/images/next.png" },
+                  { lang: "Node.js", percent: 85, flag: "/images/node.png" },
+                  { lang: "TypeScript", percent: 20, flag: "/images/typescript.png" },
+                  { lang: "MongoDB", percent: 90, flag: "/images/mongodb.png" },
                 ].map(({ lang, percent, flag }) => (
                   <li key={lang} className="flex items-center space-x-4 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                     {/* icon on the left */}
@@ -147,7 +173,7 @@ export default function Home() {
           <section id="experience" className="text-white">
             <div className="group">
               <ol>
-                <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
+                <li className="mb-11 px-4 py-4 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
                   <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono mt-1">2024<span className="h-4 w-px bg-white mx-2 inline-block"></span>Present</header>                    
                     <div>
@@ -165,7 +191,7 @@ export default function Home() {
                   </div>
                 </li>
 
-                <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
+                <li className="mb-11 px-4 py-4 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
                   <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono mt-1">2021<span className="h-4 w-px bg-white mx-2 inline-block"></span>2024</header>                    
                     <div>
@@ -184,7 +210,7 @@ export default function Home() {
                 </li>
 
 
-                <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
+                <li className="mb-11 px-4 py-4 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
                   <header className="text-sm text-grey/80 flex gap-x-2 font-plexMono  mt-1">2023<span className="h-4 w-px bg-white mx-2 inline-block"></span>2025</header>                    <div>
                       <a href="https://www.west-mec.edu/" target="_blank" rel="noopener noreferrer" className="hover:text-blue focus-visible:text-blue  group/link">
@@ -204,7 +230,7 @@ export default function Home() {
                 </li>
 
 
-                <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
+                <li className="mb-11 px-4 py-4 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
                     <header className="text-sm text-grey/80 text-nowrap font-plexMono  mt-1">2025</header>
                     <div>
@@ -262,7 +288,7 @@ export default function Home() {
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
           </ul>
           <div className="flex justify-center lg:justify-end mt-4">
-            <a href="https://github.com/sshafe928/cash-compass"><LuGithub className="text-lg" /></a>
+            <a href="https://github.com/sshafe928/cash-compass"><LuGithub className="text-lg hover:text-blue/70 transition-all " /></a>
           </div>
         </div>
         <img data-aos="fade-right" src="/images/FBLA.png" alt="FBLA Project" className="w-full lg:w-1/2 max-w-md" />
@@ -281,7 +307,7 @@ export default function Home() {
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
           </ul>
           <div className="flex justify-center lg:justify-start mt-4">
-            <a href="https://github.com/sshafe928/wbla_boyscout"><LuGithub className="text-lg" /></a>
+            <a href="https://github.com/sshafe928/wbla_boyscout"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
           </div>
         </div>
       </div>
@@ -298,7 +324,7 @@ export default function Home() {
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
           </ul>
           <div className="flex justify-center lg:justify-end mt-4">
-            <a href="https://github.com/Diego-Esquivias/Pet-Adoption-Platform"><LuGithub className="text-lg" /></a>
+            <a href="https://github.com/Diego-Esquivias/Pet-Adoption-Platform"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
           </div>
         </div>
         <img data-aos="fade-right" src="/images/pet.png" alt="Pet Adoption" className="w-full lg:w-1/2 max-w-md" />
@@ -317,7 +343,7 @@ export default function Home() {
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
           </ul>
           <div className="flex justify-center lg:justify-start mt-4">
-            <a href="https://github.com/sshafe928/cipher-project"><LuGithub className="text-lg" /></a>
+            <a href="https://github.com/sshafe928/cipher-project"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
           </div>
         </div>
       </div>

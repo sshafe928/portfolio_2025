@@ -1,5 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { CiLinkedin } from "react-icons/ci";
 import AOSInitializer from "@/app/components/AOSInitializer";
+import { FaInstagram } from "react-icons/fa";
+
+import { SiCredly } from "react-icons/si";
+
 
 import "./globals.css";
 
@@ -27,6 +32,22 @@ export default function RootLayout({ children }) {
       >
         <AOSInitializer/>
         {children}
+        <footer className="mt-4 footer sm:footer-horizontal bg-grey/10 text-neutral-content items-center px-6 pt-3">
+          <aside className="grid-flow-col items-center">
+            <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+          </aside>
+          <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <a>
+              <CiLinkedin className="text-white hover:text-blue/70 transition-all duration-300 text-3xl hover:-translate-y-2"/>
+            </a>
+            <a>
+              <SiCredly className="pb-1 text-white hover:text-blue/70 transition-all duration-300 text-5xl hover:-translate-y-2"/>
+            </a>
+            <a>
+              <FaInstagram  className="text-white hover:text-blue/70 transition-all duration-300 text-3xl hover:-translate-y-2"/>
+            </a>
+          </nav>
+        </footer>
       </body>
     </html>
   );

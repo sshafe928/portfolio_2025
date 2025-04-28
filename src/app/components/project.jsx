@@ -79,7 +79,7 @@ const Project = () =>{
     ]
     return (
         <>
-        <div className="flex flex-wrap gap-6 justify-center">
+        <div className="flex flex-wrap gap-6 justify-center mb-8">
             {projects.map((project) => (
                 <div
                 key={project.id}
@@ -95,7 +95,7 @@ const Project = () =>{
                         rel="noopener noreferrer"
                         className="ml-auto"
                     >
-                        <LuGithub className="text-white group-hover:text-blue hover:text-blue-500 transition-colors duration-300 text-xl" />
+                        <LuGithub className="text-white group-hover:text-blue  transition-colors duration-300 text-xl" />
                     </a>
                     </div>
 
