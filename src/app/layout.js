@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { CiLinkedin } from "react-icons/ci";
 import AOSInitializer from "@/app/components/AOSInitializer";
 import { FaInstagram } from "react-icons/fa";
+import Spotlight from "./components/Spotlight";
 
 import { SiCredly } from "react-icons/si";
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary `}
       >
         <AOSInitializer/>
+        <Spotlight/>
         {children}
         <footer className="mt-4 footer sm:footer-horizontal bg-grey/10 text-neutral-content items-center px-6 pt-3">
           <aside className="grid-flow-col items-center">
