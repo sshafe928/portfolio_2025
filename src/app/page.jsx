@@ -151,7 +151,7 @@ export default function Home() {
                   <div className="flex flex-row gap-x-6">
                   <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono mt-1">2024<span className="h-4 w-px bg-white mx-2 inline-block"></span>Present</header>                    
                     <div>
-                      <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
+                      <a href="https://www.texasroadhouse.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue focus-visible:text-blue  group/link">
                         <h3 className="flex items-center text-2xl font-jaro tracking-wide">Hostess, Texas Roadhouse    <GoArrowUpRight className="ml-4" /></h3>
                       </a>
                       <p className="text-grey/80">As a hostess at Texas Roadhouse, I developed strong customer service skills, efficiently managing guest call aheads and ensuring a positive dining experience. I also honed my ability to multitask in a fast-paced environment while maintaining professionalism and a welcoming atmosphere.</p>
@@ -169,7 +169,7 @@ export default function Home() {
                   <div className="flex flex-row gap-x-6">
                   <header className="text-sm text-grey/80 flex  gap-x-2 font-plexMono mt-1">2021<span className="h-4 w-px bg-white mx-2 inline-block"></span>2024</header>                    
                     <div>
-                    <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
+                    <a href="https://ridgelineacademy.org/" target="_blank" rel="noopener noreferrer" className="hover:text-blue focus-visible:text-blue  group/link">
                         <h3 className="flex text-2xl items-center font-jaro tracking-wide">Student, Ridgeline Academy    <GoArrowUpRight className="ml-4"/></h3>
                       </a>
                       <p className="text-grey/80">I graduated early from Ridgeline Academy, a charter school, by accelerating my coursework and earning extra credits. During my time there, I was recognized for academic excellence, leadership, and community involvement, gaining a strong, versatile foundation for future pursuits.</p>
@@ -187,7 +187,7 @@ export default function Home() {
                 <li className="mb-11 px-4 py-2 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
                   <div className="flex flex-row gap-x-6">
                   <header className="text-sm text-grey/80 flex gap-x-2 font-plexMono  mt-1">2023<span className="h-4 w-px bg-white mx-2 inline-block"></span>2025</header>                    <div>
-                      <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
+                      <a href="https://www.west-mec.edu/" target="_blank" rel="noopener noreferrer" className="hover:text-blue focus-visible:text-blue  group/link">
                         <h3 className="flex text-2xl items-center font-jaro tracking-wide">Student, West-MEC Coding Program <GoArrowUpRight className="ml-4"/></h3>
                       </a>
                       <p className="text-grey/80">As a West-MEC student in the coding program, I learned multiple programming languages, website development, and database fundamentals. I was also actively involved in FBLA for two years, attending events and serving as a chapter officer.</p>
@@ -208,7 +208,7 @@ export default function Home() {
                   <div className="flex flex-row gap-x-6">
                     <header className="text-sm text-grey/80 text-nowrap font-plexMono  mt-1">2025</header>
                     <div>
-                      <a href="" className="hover:text-blue focus-visible:text-blue  group/link">
+                      <a href="#scout-project" className="hover:text-blue focus-visible:text-blue  group/link">
                         <h3 className="flex text-2xl items-center font-jaro tracking-wide">Scrum Master, Work Based Learning <GoArrowUpRight className="ml-4" /></h3>
                       </a>
                       <p className="text-grey/80">As part of the West-MEC coding program, I led a work-based learning project as Scrum Master, where my team built and launched a website from the ground up for Boy Scout Troop 747. We integrated it with MongoDB and successfully deployed it on a hosting platform.</p>
@@ -269,7 +269,7 @@ export default function Home() {
       </div>
 
       {/* Scout Project */}
-      <div className="flex flex-col lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
+      <div id="scout-project" className="flex flex-col lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
         <img data-aos="fade-left" src="/images/scout.png" alt="Scout Project" className="w-full lg:w-1/2 max-w-md" />
         <div data-aos="fade-right" className="text-center lg:text-left w-full lg:w-1/2">
           <h3 className="hidden lg:block text-blue font-plexMono">Work based Learning Project</h3>
