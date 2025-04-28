@@ -62,10 +62,19 @@ const Project = () =>{
             id: 7,
             name: "File Manipulation",
             langs: ["Python"],
-            desc: "This was where I used pyhron and began learning file manipulation",
+            desc: "This was where I used python and began learning file manipulation",
             gitLink: "https://github.com/sshafe928/File-Manipulation/blob/main/manipulation%20assign/manipulator.py",
             img: "",
             date: "2025"
+        },
+        {
+            id: 8,
+            name: "Binary Conversion",
+            langs: ["Python"],
+            desc: "This was where I used python and created a decimal to binary converter.",
+            gitLink: "https://github.com/sshafe928/Python_Conversion_project",
+            img: "",
+            date: "2023"
         }
     ]
     return (

@@ -248,98 +248,91 @@ export default function Home() {
       <hr className="h-px w-24 bg-white ml-4" />
     </div>
 
-    <section id="projects" className="text-white flex flex-col mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0  ">
+    <section id="projects" className="text-white flex flex-col mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
 
-
-
-    <div  className="flex items-center mb-24">
-    <img data-aos="fade-right" src="/images/FBLA.png" alt={`image`} width={650} height={35} />
-
-      <div data-aos="fade-left">
-        <div className="justify-items-end align-center space-y-2">
-          <h3 className="text-blue font-plexMono">Student Project</h3>
+      {/* FBLA Project */}
+      <div className="flex flex-col-reverse lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
+        <div data-aos="fade-left" className="text-center lg:text-right w-full lg:w-1/2">
+          <h3 className="hidden lg:block text-blue font-plexMono">Student Project</h3>
           <h1 className="text-2xl font-plexMono">FBLA CODING & PROGRAMMING</h1>
-          <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right font-plexMono'>A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
-          <ul className="flex felx-row space-x-6">
-            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
-            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
-            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
+          <p className="bg-grey2 text-white text-lg z-10 p-6 lg:p-8 font-plexMono">A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
+          <ul className="flex flex-wrap justify-center lg:justify-end space-x-2 mt-2">
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
           </ul>
-          <div className="flex flex-row space-x-4"><a href="https://github.com/sshafe928/cash-compass"><LuGithub /></a></div>
-        </div>
-      </div>
-    </div>
-
-
-    <div className="flex items-center mb-24">
-              
-        <div data-aos="fade-right" className="realtive z-10">
-          <div className="justify-items-start align-center space-y-2">
-            <h3 className="text-blue font-plexMono">Work based Learning Project</h3>
-            <h1 className="text-2xl font-plexMono" >BOY SCOUT TROOP 747</h1>
-            <p className='bg-grey2 text-white text-lg relative z-10 p-8 -mr-28 text-left font-plexMono'>A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation. </p>
-            <ul className="flex felx-row space-x-6">
-              <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
-              <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
-              <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
-            </ul>
-            <div className="flex flex-row space-x-4"><a href="https://github.com/sshafe928/wbla_boyscout"><LuGithub /></a></div>
+          <div className="flex justify-center lg:justify-end mt-4">
+            <a href="https://github.com/sshafe928/cash-compass"><LuGithub className="text-lg" /></a>
           </div>
         </div>
-
-        <img data-aos="fade-left" src="/images/scout.png" alt={`image`} width={650} height={35} className="-z-0 relative"/>
-
+        <img data-aos="fade-right" src="/images/FBLA.png" alt="FBLA Project" className="w-full lg:w-1/2 max-w-md" />
       </div>
 
+      {/* Scout Project */}
+      <div className="flex flex-col lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
+        <img data-aos="fade-left" src="/images/scout.png" alt="Scout Project" className="w-full lg:w-1/2 max-w-md" />
+        <div data-aos="fade-right" className="text-center lg:text-left w-full lg:w-1/2">
+          <h3 className="hidden lg:block text-blue font-plexMono">Work based Learning Project</h3>
+          <h1 className="text-2xl font-plexMono">BOY SCOUT TROOP 747</h1>
+          <p className="bg-grey2 text-white text-lg p-6 lg:p-8 font-plexMono">A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation.</p>
+          <ul className="flex flex-wrap justify-center lg:justify-start space-x-2 mt-2">
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
+          </ul>
+          <div className="flex justify-center lg:justify-start mt-4">
+            <a href="https://github.com/sshafe928/wbla_boyscout"><LuGithub className="text-lg" /></a>
+          </div>
+        </div>
+      </div>
 
-    <div className="flex items-center mb-24">
-    <img data-aos="fade-right" src="/images/pet.png" alt={`image`} width={650} height={35} />
-
-      <div data-aos="fade-left">
-        <div className="justify-items-end align-center space-y-2">
-          <h3 className="text-blue font-plexMono">Student Project</h3>
+      {/* Pet Adoption */}
+      <div className="flex flex-col-reverse lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
+        <div data-aos="fade-left" className="text-center lg:text-right w-full lg:w-1/2">
+          <h3 className="hidden lg:block text-blue font-plexMono">Student Project</h3>
           <h1 className="text-2xl font-plexMono">PET ADOPTION WEBSITE</h1>
-          <p className='bg-grey2 text-white text-lg z-10 p-8 -ml-28 text-right font-plexMono'>A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
-          <ul className="flex felx-row space-x-6">
-            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">EJS</li>
-            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
-            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
+          <p className="bg-grey2 text-white text-lg p-6 lg:p-8 font-plexMono">A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
+          <ul className="flex flex-wrap justify-center lg:justify-end space-x-2 mt-2">
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">EJS</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
           </ul>
-          <div className="flex flex-row space-x-4"><LuGithub /></div>
+          <div className="flex justify-center lg:justify-end mt-4">
+            <a href="https://github.com/Diego-Esquivias/Pet-Adoption-Platform"><LuGithub className="text-lg" /></a>
+          </div>
         </div>
-      </div>
-    </div>
-
-
-    <div className="flex items-center mb-24 relative">
-      <div data-aos="fade-right" className="relative z-10">
-        <div className="justify-items-start align-center space-y-2">
-          <h3 className="text-blue font-plexMono">Student Project</h3>
-          <h1 className="text-2xl font-plexMono" >CIPHER PROJECT</h1>
-          <p className='bg-grey2 text-white text-lg  p-8 -mr-28 text-left font-plexMono'>The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
-          <ul className="flex felx-row space-x-6">
-            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
-            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">HTML</li>
-            <li className="mr-2 mt-2 px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
-          </ul>
-          <div className="flex flex-row space-x-4"><LuGithub /></div>
-        </div>
+        <img data-aos="fade-right" src="/images/pet.png" alt="Pet Adoption" className="w-full lg:w-1/2 max-w-md" />
       </div>
 
-      <img  data-aos="fade-left" src="/images/Cipher.png" alt={`image`} width={650} height={35} className="hover:bg-blue/90"/>
-    </div>
-    
+      {/* Cipher Game */}
+      <div className="flex flex-col lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
+        <img data-aos="fade-left" src="/images/Cipher.png" alt="Cipher Project" className="w-full lg:w-1/2 max-w-md" />
+        <div data-aos="fade-right" className="text-center lg:text-left w-full lg:w-1/2">
+          <h3 className="hidden lg:block text-blue font-plexMono">Student Project</h3>
+          <h1 className="text-2xl font-plexMono">CIPHER PROJECT</h1>
+          <p className="bg-grey2 text-white text-lg p-6 lg:p-8 font-plexMono">The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
+          <ul className="flex flex-wrap justify-center lg:justify-start space-x-2 mt-2">
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">HTML</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
+          </ul>
+          <div className="flex justify-center lg:justify-start mt-4">
+            <a href="https://github.com/sshafe928/cipher-project"><LuGithub className="text-lg" /></a>
+          </div>
+        </div>
+      </div>
 
-    <div className="flex justify-center">
-      <a href="/projects">
-        <button className="font-jersey text-xl group relative inline-flex text-white h-12 items-center my-8 justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-3 font-medium text-neutral-600 transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)] w-auto">
-          Extra Projects
-        </button>
-      </a>
-    </div>
-
+      {/* Extra Projects Button */}
+      <div className="flex justify-center">
+        <a href="/projects">
+          <button className="font-jersey text-xl group relative inline-flex text-white h-12 items-center my-8 justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-6 font-medium text-neutral-600 transition-all duration-100 shadow-lg active:translate-x-[3px] active:translate-y-[3px]">
+            Extra Projects
+          </button>
+        </a>
+      </div>
 
     </section>
+
 
     <div  className="flex items-center justify-center my-24">
       <hr className="h-px w-24 bg-white mr-4" />
