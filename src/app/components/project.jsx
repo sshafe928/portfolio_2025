@@ -81,20 +81,12 @@ const Project = () =>{
         <>
         <div className="flex flex-wrap gap-6 justify-center mb-8">
             {projects.map((project) => (
-                <div
-                key={project.id}
-                className="group bg-grey/10 px-7 py-8 rounded-md w-full sm:w-[22rem] flex flex-col justify-between min-h-[300px] transition-all duration-300 ease-in-out hover:-translate-y-2"
-                >
+                <div key={project.id} className="group bg-grey/10 px-7 py-8 rounded-md w-full sm:w-[22rem] flex flex-col justify-between min-h-[300px] transition-all duration-300 ease-in-out hover:-translate-y-2 ">
                 {/* Top Section */}
                 <div>
                     <div className="flex items-center mb-4">
                     <LuFolderCode className="text-blue text-5xl" />
-                    <a
-                        href={project.gitLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="ml-auto"
-                    >
+                    <a href={project.gitLink} target="_blank" rel="noopener noreferrer" className="ml-auto">
                         <LuGithub className="text-white group-hover:text-blue  transition-colors duration-300 text-xl" />
                     </a>
                     </div>
@@ -110,10 +102,7 @@ const Project = () =>{
                 {/* Bottom Language Tags */}
                 <ul className="mt-6 flex flex-wrap justify-center gap-2">
                     {project.langs.map((lang, index) => (
-                    <li
-                        key={index}
-                        className="font-plexMono bg-blue/10 text-blue text-xs px-2 py-1 rounded-full"
-                    >
+                    <li key={index} className="font-plexMono bg-blue/10 text-blue text-xs px-2 py-1 rounded-full" >
                         {lang}
                     </li>
                     ))}

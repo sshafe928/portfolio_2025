@@ -95,9 +95,10 @@ export default function Home() {
             <p className="mb-4 text-grey/80 font-plexMono">My passion lies in computer science and web development, where I enjoy blending logical problem-solving with thoughtful design. I’ve built a solid foundation in UX principles and front-end technologies including JavaScript, CSS, HTML, Python, React.js, and MongoDB, and I’m always eager to expand that knowledge.</p>
             <p className="mb-4 text-grey/80 font-plexMono">I’m currently exploring opportunities to apply what I’ve learned in the classroom to real-world challenges. Whether I’m managing projects or diving into code, I take pride in delivering high-quality work and approaching each task with curiosity, efficiency, and a willingness to learn.</p>
             <p className="mb-4 text-grey/80 font-plexMono">Outside of academics, I’m constantly learning—whether that’s picking up new coding concepts, collaborating on group projects, or exploring creative problem-solving techniques. I'm passionate about continued growth and excited to contribute to environments where I can learn, build, and make a meaningful impact.</p>
+            <div id="languages"></div>
           </section>
 
-          <section id="languages" className="text-white mb-32 group">
+          <section className="text-white mb-32 group">
             <div className="m-3 mb-20 ">
               <ul className="space-y-4">
                 {[
@@ -166,11 +167,13 @@ export default function Home() {
                 ))}
               </ul>
             </div>
+            <div id="experience" ></div>
           </section>
+          
 
 
 
-          <section id="experience" className="text-white">
+          <section className="text-white">
             <div className="group">
               <ol>
                 <li className="mb-11 px-4 py-4 rounded-lg transition-all group-hover:opacity-50 group-hover:saturate-50 hover:!opacity-100 hover:!saturate-100 hover:bg-grey/5 hover:backdrop-blur-md">
@@ -265,6 +268,7 @@ export default function Home() {
           </section>
         </div>
       </div>
+      <div id="projects"></div>
     </div>
 
 
@@ -274,14 +278,14 @@ export default function Home() {
       <hr className="h-px w-24 bg-white ml-4" />
     </div>
 
-    <section id="projects" className="text-white flex flex-col mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+    <section  className="text-white flex flex-col mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
 
       {/* FBLA Project */}
       <div className="flex flex-col-reverse lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
         <div data-aos="fade-left" className="text-center lg:text-right w-full lg:w-1/2">
           <h3 className="hidden lg:block text-blue font-plexMono">Student Project</h3>
           <h1 className="text-2xl font-plexMono">FBLA CODING & PROGRAMMING</h1>
-          <p className="bg-grey2 text-white text-lg z-10 p-6 lg:p-8 font-plexMono">A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
+          <p className="bg-grey2 text-white text-lg z-10 p-6 lg:p-6 font-plexMono">A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
           <ul className="flex flex-wrap justify-center lg:justify-end space-x-2 mt-2">
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
@@ -300,7 +304,7 @@ export default function Home() {
         <div data-aos="fade-right" className="text-center lg:text-left w-full lg:w-1/2">
           <h3 className="hidden lg:block text-blue font-plexMono">Work based Learning Project</h3>
           <h1 className="text-2xl font-plexMono">BOY SCOUT TROOP 747</h1>
-          <p className="bg-grey2 text-white text-lg p-6 lg:p-8 font-plexMono">A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation.</p>
+          <p className="bg-grey2 text-white text-lg p-2 lg:p-4 font-plexMono">A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation.</p>
           <ul className="flex flex-wrap justify-center lg:justify-start space-x-2 mt-2">
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
@@ -317,7 +321,7 @@ export default function Home() {
         <div data-aos="fade-left" className="text-center lg:text-right w-full lg:w-1/2">
           <h3 className="hidden lg:block text-blue font-plexMono">Student Project</h3>
           <h1 className="text-2xl font-plexMono">PET ADOPTION WEBSITE</h1>
-          <p className="bg-grey2 text-white text-lg p-6 lg:p-8 font-plexMono">A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
+          <p className="bg-grey2 text-white text-lg p-6 lg:p-6 font-plexMono">A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
           <ul className="flex flex-wrap justify-center lg:justify-end space-x-2 mt-2">
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">EJS</li>
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
@@ -336,7 +340,7 @@ export default function Home() {
         <div data-aos="fade-right" className="text-center lg:text-left w-full lg:w-1/2">
           <h3 className="hidden lg:block text-blue font-plexMono">Student Project</h3>
           <h1 className="text-2xl font-plexMono">CIPHER PROJECT</h1>
-          <p className="bg-grey2 text-white text-lg p-6 lg:p-8 font-plexMono">The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
+          <p className="bg-grey2 text-white text-lg p-6 lg:p-6 font-plexMono">The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
           <ul className="flex flex-wrap justify-center lg:justify-start space-x-2 mt-2">
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">HTML</li>
