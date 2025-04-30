@@ -32,6 +32,7 @@ export default function Home() {
           pin: elementRef.current,
           start: 'top top',
           end: '+=2300',
+          scrub: true
         });
       }
     };
@@ -61,7 +62,7 @@ export default function Home() {
           <h1 className="lg:text-5xl font-bold  font-jaro tracking-wider sm:text-5xl">SABRINA SHAFER</h1>
           <h3 className="mt-3 text-2xl font-medium  font-jersey tracking-wide ">Coding Student</h3>
           <p className="mt-4 max-w-xs leading-normal text-grey/80 font-plexMono text-md">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
-          <ul className="mt-16 w-max">
+          <ul className="mt-16 w-max ">
             <li>
               <a className= "group flex items-center py-3 active" href="#">
                 <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
@@ -90,7 +91,7 @@ export default function Home() {
         </div>
         
         <div className= "text-white pt-24 mr-8 lg:w-[52%] lg:py-24">
-          <section className="mb-16">
+          <section className="mb-32 text-lg">
             <p className="mb-4 text-grey/80 font-plexMono">I'm a motivated and detail-oriented student with a strong academic background, maintaining an A average across all subjects. I thrive in leadership roles, having taken on responsibilities through school athletics and West-MEC activities, where I’ve developed teamwork, communication, and organizational skills.</p>
             <p className="mb-4 text-grey/80 font-plexMono">My passion lies in computer science and web development, where I enjoy blending logical problem-solving with thoughtful design. I’ve built a solid foundation in UX principles and front-end technologies including JavaScript, CSS, HTML, Python, React.js, and MongoDB, and I’m always eager to expand that knowledge.</p>
             <p className="mb-4 text-grey/80 font-plexMono">I’m currently exploring opportunities to apply what I’ve learned in the classroom to real-world challenges. Whether I’m managing projects or diving into code, I take pride in delivering high-quality work and approaching each task with curiosity, efficiency, and a willingness to learn.</p>
