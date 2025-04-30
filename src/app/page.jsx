@@ -58,14 +58,14 @@ export default function Home() {
     <div className="mx-auto min-h-16 max-w-screen-xl px-6 py-2 font-sans md:px-12 md:py-16 lg:py-0">
       <div className='lg:flex lg:justify-between lg:gap-4'>
         <div  ref={elementRef} className=" text-white lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:py-24">
-          <h1 className="lg:text-7xl font-bold  font-jaro tracking-wider sm:text-5xl">Sabrina Shafer</h1>
+          <h1 className="lg:text-5xl font-bold  font-jaro tracking-wider sm:text-5xl">SABRINA SHAFER</h1>
           <h3 className="mt-3 text-xl font-medium  font-jersey tracking-wide sm:text-xl">Coding Student</h3>
           <p className="mt-4 max-w-xs leading-normal text-grey/80 font-plexMono">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
           <ul className="mt-16 w-max">
             <li>
               <a className= "group flex items-center py-3 active" href="#">
                 <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
-                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 font-jaro"> About </span>
+                <span className=" text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 font-jaro "> About </span>
               </a>
             </li>
             <li>
@@ -115,7 +115,7 @@ export default function Home() {
                     <div className="flex-1">
                       {/* Title row */}
                       <div className="flex justify-between items-center">
-                        <h1 className="text-lg font-semibold tracking-wide font-jaro">{lang}</h1>
+                        <h1 className="text-lg font-semibold tracking-widest font-jaro ">{lang}</h1>
                         <span className="text-sm font-medium tracking-wide font-jaro">{percent}%</span>
                       </div>
 
