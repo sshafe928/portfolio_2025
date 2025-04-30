@@ -17,14 +17,14 @@ useEffect(() => {
 }, []);
 
 const spotlightStyle = {
-    background: `radial-gradient(circle 350px at ${mousePosition.x}px ${mousePosition.y}px, rgba(110, 117, 197, 0.30), rgba(0, 0, 0, 0.05))`,
+    background: `radial-gradient(circle 350px at ${mousePosition.x}px ${mousePosition.y}px, rgba(110, 117, 197, 0.35), rgba(0, 0, 0, 0.05))`,
     height: '150vh',
     width: '150vw',
     position: 'fixed',
     top: 0,
     left: 0,
     pointerEvents: 'none',
-    zIndex: 9999,
+    zIndex: 0,
 };
 
 return <div style={spotlightStyle}></div>;

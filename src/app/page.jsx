@@ -58,7 +58,7 @@ export default function Home() {
     <div className="mx-auto min-h-16 max-w-screen-xl px-6 py-2 font-sans md:px-12 md:py-16 lg:py-0">
       <div className='lg:flex lg:justify-between lg:gap-4'>
         <div  ref={elementRef} className=" text-white lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:py-24">
-          <h1 className="text-4xl font-bold  font-jaro tracking-wider sm:text-5xl">Sabrina Shafer</h1>
+          <h1 className="lg:text-7xl font-bold  font-jaro tracking-wider sm:text-5xl">Sabrina Shafer</h1>
           <h3 className="mt-3 text-xl font-medium  font-jersey tracking-wide sm:text-xl">Coding Student</h3>
           <p className="mt-4 max-w-xs leading-normal text-grey/80 font-plexMono">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
           <ul className="mt-16 w-max">
@@ -292,7 +292,7 @@ export default function Home() {
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
           </ul>
           <div className="flex justify-center lg:justify-end mt-4">
-            <a href="https://github.com/sshafe928/cash-compass"><LuGithub className="text-lg hover:text-blue/70 transition-all " /></a>
+            <a href="https://github.com/sshafe928/cash-compass" target="_blank" rel="noopener noreferrer"><LuGithub className="text-lg hover:text-blue/70 transition-all " /></a>
           </div>
         </div>
         <img data-aos="fade-right" src="/images/FBLA.png" alt="FBLA Project" className="w-full lg:w-1/2 max-w-md" />
@@ -311,7 +311,7 @@ export default function Home() {
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
           </ul>
           <div className="flex justify-center lg:justify-start mt-4">
-            <a href="https://github.com/sshafe928/wbla_boyscout"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
+            <a href="https://github.com/sshafe928/wbla_boyscout" target="_blank" rel="noopener noreferrer"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
           </div>
         </div>
       </div>
@@ -328,7 +328,7 @@ export default function Home() {
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
           </ul>
           <div className="flex justify-center lg:justify-end mt-4">
-            <a href="https://github.com/Diego-Esquivias/Pet-Adoption-Platform"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
+            <a href="https://github.com/Diego-Esquivias/Pet-Adoption-Platform" target="_blank" rel="noopener noreferrer"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
           </div>
         </div>
         <img data-aos="fade-right" src="/images/pet.png" alt="Pet Adoption" className="w-full lg:w-1/2 max-w-md" />
@@ -347,7 +347,7 @@ export default function Home() {
             <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
           </ul>
           <div className="flex justify-center lg:justify-start mt-4">
-            <a href="https://github.com/sshafe928/cipher-project"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
+            <a href="https://github.com/sshafe928/cipher-project" target="_blank" rel="noopener noreferrer"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
           </div>
         </div>
       </div>
@@ -366,7 +366,7 @@ export default function Home() {
 
     <div  className="flex items-center justify-center my-24">
       <hr className="h-px w-24 bg-white mr-4" />
-      <h1 className="text-5xl text-white text-center font-jaro">CONTACT ME</h1>
+      <h1 className="text-5xl text-white text-center font-jaro z-1">CONTACT ME</h1>
       <hr className="h-px w-24 bg-white ml-4" />
     </div>
 
