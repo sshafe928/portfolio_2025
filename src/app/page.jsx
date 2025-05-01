@@ -1,19 +1,19 @@
 'use client'
-import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md";
-import { AiOutlineExport } from "react-icons/ai";
 import { LuGithub } from "react-icons/lu";
 import { GoArrowUpRight } from "react-icons/go";
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import emailjs from '@emailjs/browser';
 
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
 
+  //Scroll trigger setup
   const elementRef = useRef(null);
   const scrollTriggerRef = useRef(null); 
 
@@ -52,6 +52,30 @@ export default function Home() {
     };
   }, { scope: elementRef });
 
+//EmailJs setup
+const form = useRef();
+const [success, setSuccess] = useState(false);
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm('service_5kn0n68', 'template_1nzoldd', form.current, {
+      publicKey: '3Nv6zlnRyJ7Hzudmf',
+    })
+    .then(
+      () => {
+        console.log('SUCCESS!');
+        form.current.reset(); // Clears the form
+        setSuccess(true);     // Triggers success message
+        setTimeout(() => setSuccess(false), 5000); 
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      }
+    );
+};
+
 
 
   return (
@@ -62,7 +86,7 @@ export default function Home() {
           <h1 className="lg:text-5xl font-bold  font-jaro tracking-wider sm:text-5xl">SABRINA SHAFER</h1>
           <h3 className="mt-3 text-2xl font-medium  font-jersey tracking-wide ">Coding Student</h3>
           <p className="mt-4 max-w-xs leading-normal text-grey/80 font-plexMono text-md">I’m a West-MEC and high school graduate currently pursuing a degree in Computer science.</p>
-          <ul className="mt-16 w-max ">
+          <ul className="mt-16 w-max hidden lg:block ">
             <li>
               <a className= "group flex items-center py-3 active" href="#">
                 <span className=" mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" ></span>
@@ -260,7 +284,7 @@ export default function Home() {
 
             <a href="/files/resume.png" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
             <div className="flex items-center space-x-2">
-                <h1 className="text-base font-medium font-plexMono">View Full Resume</h1>
+                <h1 className="text-base font-medium font-plexMono text-jaro">View Full Resume</h1>
                 <MdArrowOutward className="w-5 h-5" />
             </div>
             </a>
@@ -282,74 +306,83 @@ export default function Home() {
     <section  className="text-white flex flex-col mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
 
       {/* FBLA Project */}
-      <div className="flex flex-col-reverse lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
+      <div className="flex flex-col-reverse lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-5">
         <div data-aos="fade-left" className="text-center lg:text-right w-full lg:w-1/2">
           <h3 className="hidden lg:block text-blue font-plexMono">Student Project</h3>
-          <h1 className="text-2xl font-plexMono">FBLA CODING & PROGRAMMING</h1>
-          <p className="bg-grey2 text-white text-lg z-10 p-6 lg:p-6 font-plexMono">A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
-          <ul className="flex flex-wrap justify-center lg:justify-end space-x-2 mt-2">
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
-          </ul>
-          <div className="flex justify-center lg:justify-end mt-4">
-            <a href="https://github.com/sshafe928/cash-compass" target="_blank" rel="noopener noreferrer"><LuGithub className="text-lg hover:text-blue/70 transition-all " /></a>
+          <div className="flex justify-between items-center">
+            <a href="https://github.com/sshafe928/cash-compass" target="_blank" rel="noopener noreferrer" >
+              <LuGithub className="text-xl ml-3 hover:-translate-y-2 hover:text-blue/70 transition-all" />
+            </a>
+            <h1 className="text-2xl font-jaro">FBLA CODING & PROGRAMMING</h1>
           </div>
+          <p className="bg-grey2 text-white text-lg z-10 p-6 lg:p-6 font-plexMono">A web app for competing in FBLA State 2024. View your finances with budgets, graphs, savings, and goals. This is a financing web application to help college students get in control of their debts and spending habits.</p>
+          <ul className="flex flex-wrap justify-center lg:justify-end space-x-2 mt-2 text-lg">
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">React.js</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">Node.js</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">Tailwind</li>
+          </ul>
         </div>
         <img data-aos="fade-right" src="/images/FBLA.png" alt="FBLA Project" className="w-full lg:w-1/2 max-w-md" />
       </div>
 
       {/* Scout Project */}
-      <div id="scout-project" className="flex flex-col lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
+      <div id="scout-project" className="flex flex-col lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-5">
         <img data-aos="fade-left" src="/images/scout.png" alt="Scout Project" className="w-full lg:w-1/2 max-w-md" />
         <div data-aos="fade-right" className="text-center lg:text-left w-full lg:w-1/2">
           <h3 className="hidden lg:block text-blue font-plexMono">Work based Learning Project</h3>
-          <h1 className="text-2xl font-plexMono">BOY SCOUT TROOP 747</h1>
-          <p className="bg-grey2 text-white text-lg p-2 lg:p-4 font-plexMono">A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation.</p>
-          <ul className="flex flex-wrap justify-center lg:justify-start space-x-2 mt-2">
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">React.js</li>
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Node.js</li>
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">Tailwind</li>
-          </ul>
-          <div className="flex justify-center lg:justify-start mt-4">
-            <a href="https://github.com/sshafe928/wbla_boyscout" target="_blank" rel="noopener noreferrer"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
+          <div className="flex justify-between items-center">
+            <h1 className="text-2xl font-jaro">BOY SCOUT TROOP 747</h1>
+            <a href="https://github.com/sshafe928/wbla_boyscout" target="_blank" rel="noopener noreferrer" >
+              <LuGithub className="text-xl mr-3 hover:-translate-y-2 hover:text-blue/70 transition-all" />
+            </a>
           </div>
+          <p className="bg-grey2 text-white text-lg p-2 lg:p-4 font-plexMono">A web app remake for a boy scout troop. Revamping the entirety of the website and allowing for easy user navigation.</p>
+          <ul className="flex flex-wrap justify-center lg:justify-start space-x-2 mt-2 text-lg">
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">React.js</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">Node.js</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">Tailwind</li>
+          </ul>
         </div>
       </div>
 
       {/* Pet Adoption */}
-      <div className="flex flex-col-reverse lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
+      <div className="flex flex-col-reverse lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-5">
         <div data-aos="fade-left" className="text-center lg:text-right w-full lg:w-1/2">
           <h3 className="hidden lg:block text-blue font-plexMono">Student Project</h3>
-          <h1 className="text-2xl font-plexMono">PET ADOPTION WEBSITE</h1>
-          <p className="bg-grey2 text-white text-lg p-6 lg:p-6 font-plexMono">A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
-          <ul className="flex flex-wrap justify-center lg:justify-end space-x-2 mt-2">
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">EJS</li>
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
-          </ul>
-          <div className="flex justify-center lg:justify-end mt-4">
-            <a href="https://github.com/Diego-Esquivias/Pet-Adoption-Platform" target="_blank" rel="noopener noreferrer"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
+          <div className="flex justify-between items-center">
+            <a href="https://github.com/Diego-Esquivias/Pet-Adoption-Platform" target="_blank" rel="noopener noreferrer" >
+              <LuGithub className="text-xl ml-3 hover:-translate-y-2 hover:text-blue/70 transition-all" />
+            </a>
+            <h1 className="text-2xl font-jaro">PET ADOPTION WEBSITE</h1>
           </div>
+          <p className="bg-grey2 text-white text-lg p-6 lg:p-6 font-plexMono">A web app for viewing and adopting pets. You can submit and add pets to the adoption list. When searching for pets you can use a search bar to filter though all pets.</p>
+          <ul className="flex flex-wrap justify-center lg:justify-end space-x-2 mt-2 text-lg">
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">EJS</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">CSS</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">JavaScript</li>
+          </ul>
         </div>
         <img data-aos="fade-right" src="/images/pet.png" alt="Pet Adoption" className="w-full lg:w-1/2 max-w-md" />
       </div>
 
       {/* Cipher Game */}
-      <div className="flex flex-col lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-12">
+      <div className="flex flex-col lg:flex-row items-center mb-24 space-y-8 lg:space-y-0 lg:space-x-5">
         <img data-aos="fade-left" src="/images/Cipher.png" alt="Cipher Project" className="w-full lg:w-1/2 max-w-md" />
         <div data-aos="fade-right" className="text-center lg:text-left w-full lg:w-1/2">
           <h3 className="hidden lg:block text-blue font-plexMono">Student Project</h3>
-          <h1 className="text-2xl font-plexMono">CIPHER PROJECT</h1>
-          <p className="bg-grey2 text-white text-lg p-6 lg:p-6 font-plexMono">The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty. Players can also track their progress, earn scores, and challenge themselves to complete the game in less time.</p>
-          <ul className="flex flex-wrap justify-center lg:justify-start space-x-2 mt-2">
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">JavaScript</li>
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">HTML</li>
-            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey">CSS</li>
-          </ul>
-          <div className="flex justify-center lg:justify-start mt-4">
-            <a href="https://github.com/sshafe928/cipher-project" target="_blank" rel="noopener noreferrer"><LuGithub className="text-lg hover:text-blue/70 transition-all" /></a>
+          <div className="flex justify-between items-center">
+            <h1 className="text-2xl font-jaro">CIPHER PROJECT</h1>
+            <a href="https://github.com/sshafe928/cipher-project" target="_blank" rel="noopener noreferrer" >
+              <LuGithub className="text-xl mr-3 hover:-translate-y-2 hover:text-blue/70 transition-all" />
+            </a>
           </div>
+          <p className="bg-grey2 text-white text-lg p-6 lg:p-6 font-plexMono">The Cipher Game is a word puzzle game where players solve scrambled words using a transposition cipher. The game features different levels with varying grid sizes and difficulty.</p>
+          <ul className="flex flex-wrap justify-center lg:justify-start space-x-2 mt-2 text-lg">
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">JavaScript</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">HTML</li>
+            <li className="px-4 py-1 text-blue rounded-full bg-blue/10 font-jersey tracking-wide">CSS</li>
+          </ul>
+          
         </div>
       </div>
 
@@ -373,47 +406,33 @@ export default function Home() {
 
     <section data-aos="zoom-in-up" id="contact" className=" text-white  justify-items-center flex flex-col mx-auto  min-h-20 my-20 max-w-screen-lg px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
       <div className="max-w-4xl mx-4 p-6 bg-opacity-20 bg-grey rounded-lg shadow-lg text-blue-200">
-        <form className="space-y-4">
+        <form className="space-y-4 " ref={form} onSubmit={sendEmail}>
           <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
             <div className="w-full md:w-1/2">
-              <label htmlFor="name" className="text-blue block text-lg mb-2">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
-              />
+              <label htmlFor="title" className="text-blue block text-lg mb-2">Subject:</label>
+              <input id="title" type="text" name="title" className="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white" />
             </div>
             
             <div className="w-full md:w-1/2">
-              <label htmlFor="email" className="text-blue block text-lg mb-2">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
-              />
+              <label htmlFor="user_email" className="text-blue block text-lg mb-2">Email:</label>
+              <input  id="email" type="email" name="user_email"className="w-full p-2 rounded  bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white" />
             </div>
           </div>
           
           <div>
             <label htmlFor="message" className=" text-blue block text-lg mb-2">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              className="w-full p-2 rounded bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white"
-            ></textarea>
+            <textarea id="message" name="message" rows="4" className="w-full p-2 rounded bg-grey bg-opacity-20 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-white" ></textarea>
           </div>
           
           <div className="flex justify-center">
-            <button 
-              type="submit"
-              className="px-12 py-2 bg-blue-600 hover:bg-blue-700 border border-white text-white font-semibold rounded transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-            >
-              Send
+            <button type="submit"  value="Send" className="px-12 py-2 bg-blue-600 hover:bg-blue-700 border border-white text-white font-semibold rounded transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" > Send
             </button>
           </div>
+          {success && (
+            <div className="mb-4 text-green-500 text-center font-semibold">
+              Message sent successfully!
+            </div>
+          )}
         </form>
       </div>
     </section>
