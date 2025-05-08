@@ -429,7 +429,7 @@ const sendEmail = (e) => {
             </button>
           </div>
           {success && (
-            <div className="mb-4 text-green-500 text-center font-semibold">
+            <div className="mb-4 text-green-500 text-center font-semibold transition-all">
               Message sent successfully!
             </div>
           )}
