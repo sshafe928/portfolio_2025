@@ -39,10 +39,10 @@ export default function RootLayout({ children }) {
             <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
           </aside>
           <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-            <a>
+            <a href="www.linkedin.com/in/sabrina ">
               <CiLinkedin className="text-white hover:text-blue/70 transition-all duration-300 text-3xl hover:-translate-y-2"/>
             </a>
-            <a>
+            <a href="https://www.credly.com/users/sabrina-shafer">
               <SiCredly className="pb-1 text-white hover:text-blue/70 transition-all duration-300 text-5xl hover:-translate-y-2"/>
             </a>
             <a>

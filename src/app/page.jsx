@@ -7,6 +7,9 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import emailjs from '@emailjs/browser';
+import { CiLinkedin } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
+import { SiCredly } from "react-icons/si";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -112,6 +115,18 @@ const sendEmail = (e) => {
               </a>
             </li>
           </ul>
+
+          <nav className="flex gap-4 ml-4 mt-36 lg:mt-36 md:mt-24 sm:mt-14">
+            <a href="www.linkedin.com/in/sabrina ">
+              <CiLinkedin className="text-white/80 hover:text-blue/70 transition-all duration-300 text-3xl hover:-translate-y-2"/>
+            </a>
+            <a href="https://www.credly.com/users/sabrina-shafer">
+              <SiCredly className="pb-1 text-white/80 hover:text-blue/70 transition-all duration-300 text-5xl hover:-translate-y-2"/>
+            </a>
+            <a>
+              <FaInstagram  className="text-white/80 hover:text-blue/70 transition-all duration-300 text-3xl hover:-translate-y-2"/>
+            </a>
+          </nav>
         </div>
         
         <div className= "text-white pt-24 mr-8 lg:w-[52%] lg:py-24">
@@ -120,6 +135,9 @@ const sendEmail = (e) => {
             <p className="mb-4 text-grey/80 font-plexMono">My passion lies in computer science and web development, where I enjoy blending logical problem-solving with thoughtful design. I’ve built a solid foundation in UX principles and front-end technologies including JavaScript, CSS, HTML, Python, React.js, and MongoDB, and I’m always eager to expand that knowledge.</p>
             <p className="mb-4 text-grey/80 font-plexMono">I’m currently exploring opportunities to apply what I’ve learned in the classroom to real-world challenges. Whether I’m managing projects or diving into code, I take pride in delivering high-quality work and approaching each task with curiosity, efficiency, and a willingness to learn.</p>
             <p className="mb-4 text-grey/80 font-plexMono">Outside of academics, I’m constantly learning—whether that’s picking up new coding concepts, collaborating on group projects, or exploring creative problem-solving techniques. I'm passionate about continued growth and excited to contribute to environments where I can learn, build, and make a meaningful impact.</p>
+            
+            
+
             <div id="languages"></div>
           </section>
 
