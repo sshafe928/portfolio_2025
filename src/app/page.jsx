@@ -35,7 +35,8 @@ export default function Home() {
           pin: elementRef.current,
           start: 'top top',
           end: '+=2800',
-          scrub: true
+          scrub: true,
+
         });
       }
     };
@@ -176,12 +177,11 @@ const sendEmail = (e) => {
                       </div>
 
                       {/* Progress bar */}
-                      <div className="w-full h-3 bg-blue-100/50 rounded-full overflow-hidden">
-                        <div
-                          className="h-full bg-blue-500 rounded-full transition-all duration-300"
-                          style={{ width: `${percent}%` }}
-                        ></div>
-                      </div>
+                      <progress
+                        className="progress progress-info w-full h-3"
+                        value={percent}
+                        max="100"
+                      ></progress>
                     </div>
                   </li>
                 ))}

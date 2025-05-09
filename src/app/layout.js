@@ -39,32 +39,25 @@ export default function RootLayout({ children }) {
         <AOSInitializer/>
         <Spotlight/>
         {children}
-        <footer className="relative mt-4 bg-gray-100 text-neutral-700 px-6 pt-3">
-          {/* Peek image (only visible on large screens) */}
-          <div className="absolute lg:mb-[170px] lg:block hidden z-20">
-            <img src="/images/character/peek.png" alt="Chibi 1" className="w-28 h-24" />
-          </div>
-
-          {/* Footer content */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <aside className="mb-4 sm:mb-0">
-              <p className="text-sm">&copy; {new Date().getFullYear()} - All rights reserved</p>
-            </aside>
-
-            <nav className="flex gap-4">
-              <a href="https://www.linkedin.com/in/sabrina" target="_blank" rel="noopener noreferrer">
-                <CiLinkedin className="text-neutral-700 hover:text-blue-500 transition-all duration-300 text-3xl hover:-translate-y-2" />
-              </a>
-              <a href="https://www.credly.com/users/sabrina-shafer" target="_blank" rel="noopener noreferrer">
-                <SiCredly className="pb-1 text-neutral-700 hover:text-blue-500 transition-all duration-300 text-5xl hover:-translate-y-2" />
-              </a>
-              <a href="#" aria-label="Instagram">
-                <FaInstagram className="text-neutral-700 hover:text-blue-500 transition-all duration-300 text-3xl hover:-translate-y-2" />
-              </a>
-            </nav>
-          </div>
+        <footer className="mt-4 footer sm:footer-horizontal bg-grey/10 text-neutral-content items-center px-6 pt-3">
+        <div className="absolute lg:mb-[170px] lg:block hidden z-20">
+        <img src="/images/character/peek.png" alt="Chibi 1" className="w-28 h-24"/>
+        </div>
+          <aside className="flex items-center text-white">
+            <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+          </aside>
+          <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <a href="www.linkedin.com/in/sabrina ">
+              <CiLinkedin className="text-white hover:text-blue/70 transition-all duration-300 text-3xl hover:-translate-y-2"/>
+            </a>
+            <a href="https://www.credly.com/users/sabrina-shafer">
+              <SiCredly className="pb-1 text-white hover:text-blue/70 transition-all duration-300 text-5xl hover:-translate-y-2"/>
+            </a>
+            <a>
+              <FaInstagram  className="text-white hover:text-blue/70 transition-all duration-300 text-3xl hover:-translate-y-2"/>
+            </a>
+          </nav>
         </footer>
-
       </body>
     </html>
   );
