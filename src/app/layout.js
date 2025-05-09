@@ -35,6 +35,9 @@ export default function RootLayout({ children }) {
         <Spotlight/>
         {children}
         <footer className="mt-4 footer sm:footer-horizontal bg-grey/10 text-neutral-content items-center px-6 pt-3">
+        <div className="absolute lg:mb-[170px] lg:block hidden z-20">
+        <img src="/images/character/peek.png" alt="Chibi 1" className="w-28 h-24"/>
+        </div>
           <aside className="grid-flow-col items-center">
             <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
           </aside>
