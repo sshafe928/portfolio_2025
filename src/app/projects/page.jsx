@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoArrowBackOutline } from "react-icons/io5";
-import Project from "../components/Project"
+import Project from "../components/project"
 
 
 const extraProjects = () => {
