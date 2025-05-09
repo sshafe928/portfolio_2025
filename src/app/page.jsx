@@ -34,8 +34,9 @@ export default function Home() {
           trigger: elementRef.current,
           pin: elementRef.current,
           start: 'top top',
-          end: '+=2300',
-          scrub: true
+          end: '+=2800',
+          scrub: true,
+          markers: true
         });
       }
     };
